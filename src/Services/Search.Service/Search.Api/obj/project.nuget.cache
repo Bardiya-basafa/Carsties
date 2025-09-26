@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "h5HJjqYYop8=",
+  "dgSpecHash": "okHdlN+HlNs=",
   "success": true,
   "projectFilePath": "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Search.Service\\Search.Api\\Search.Api.csproj",
   "expectedPackageFiles": [
@@ -67,8 +67,7 @@
     "C:\\Users\\Notebook\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
     "C:\\Users\\Notebook\\.nuget\\packages\\system.threading.ratelimiting\\8.0.0\\system.threading.ratelimiting.8.0.0.nupkg.sha512",
     "C:\\Users\\Notebook\\.nuget\\packages\\yarp.reverseproxy\\2.3.0\\yarp.reverseproxy.2.3.0.nupkg.sha512",
-    "C:\\Users\\Notebook\\.nuget\\packages\\zstdsharp.port\\0.7.3\\zstdsharp.port.0.7.3.nupkg.sha512",
-    "C:\\Users\\Notebook\\.nuget\\packages\\microsoft.net.sdk.compilers.toolset\\9.0.301\\microsoft.net.sdk.compilers.toolset.9.0.301.nupkg.sha512"
+    "C:\\Users\\Notebook\\.nuget\\packages\\zstdsharp.port\\0.7.3\\zstdsharp.port.0.7.3.nupkg.sha512"
   ],
   "logs": []
 }

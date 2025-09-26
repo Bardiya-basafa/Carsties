@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XmpUzyL9Nu8=",
+  "dgSpecHash": "tVnOmJHyLDA=",
   "success": true,
   "projectFilePath": "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Bidding.Service\\Bidding.Infrastructure\\Bidding.Infrastructure.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Notebook\\.nuget\\packages\\microsoft.net.sdk.compilers.toolset\\9.0.301\\microsoft.net.sdk.compilers.toolset.9.0.301.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

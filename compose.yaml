@@ -68,7 +68,6 @@
       identity.db:
         condition: service_healthy
   
-  
   identity.db:
     image: postgres
     container_name: identity.db
@@ -133,7 +132,26 @@
       interval: 3s
       timeout: 3s
       retries: 5
-
+  
+  gateway:
+    container_name: gateway
+    build:
+      context: .
+      dockerfile: src/Services/Gateway.Service/Gateway.Server/Dockerfile
+    ports:
+      - "6001:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=8080
+    depends_on:
+      auction.api:
+        condition: service_started
+      search.api:
+        condition: service_started
+      identity.server:
+        condition: service_started
+  
+  
   rabbitmq:
     image: rabbitmq:management
     container_name: rabbitmq

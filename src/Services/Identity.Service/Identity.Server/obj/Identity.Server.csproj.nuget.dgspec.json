@@ -36,7 +36,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         },
         "SdkAnalysisLevel": "9.0.300"
       },
@@ -92,10 +92,6 @@
             {
               "name": "Microsoft.AspNetCore.App.Ref",
               "version": "[8.0.17, 8.0.17]"
-            },
-            {
-              "name": "Microsoft.Net.Sdk.Compilers.Toolset",
-              "version": "[9.0.301, 9.0.301]"
             },
             {
               "name": "Microsoft.NETCore.App.Host.win-x64",
