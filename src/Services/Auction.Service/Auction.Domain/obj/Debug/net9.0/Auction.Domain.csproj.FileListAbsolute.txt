@@ -1,0 +1,11 @@
+E:\Dotnet Projects\Carsties\Carsties\src\Services\Auction.Service\Auction.Domain\bin\Debug\net9.0\Auction.Domain.deps.json
+E:\Dotnet Projects\Carsties\Carsties\src\Services\Auction.Service\Auction.Domain\bin\Debug\net9.0\Auction.Domain.dll
+E:\Dotnet Projects\Carsties\Carsties\src\Services\Auction.Service\Auction.Domain\bin\Debug\net9.0\Auction.Domain.pdb
+E:\Dotnet Projects\Carsties\Carsties\src\Services\Auction.Service\Auction.Domain\obj\Debug\net9.0\Auction.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Dotnet Projects\Carsties\Carsties\src\Services\Auction.Service\Auction.Domain\obj\Debug\net9.0\Auction.Domain.AssemblyInfoInputs.cache
+E:\Dotnet Projects\Carsties\Carsties\src\Services\Auction.Service\Auction.Domain\obj\Debug\net9.0\Auction.Domain.AssemblyInfo.cs
+E:\Dotnet Projects\Carsties\Carsties\src\Services\Auction.Service\Auction.Domain\obj\Debug\net9.0\Auction.Domain.csproj.CoreCompileInputs.cache
+E:\Dotnet Projects\Carsties\Carsties\src\Services\Auction.Service\Auction.Domain\obj\Debug\net9.0\Auction.Domain.dll
+E:\Dotnet Projects\Carsties\Carsties\src\Services\Auction.Service\Auction.Domain\obj\Debug\net9.0\refint\Auction.Domain.dll
+E:\Dotnet Projects\Carsties\Carsties\src\Services\Auction.Service\Auction.Domain\obj\Debug\net9.0\Auction.Domain.pdb
+E:\Dotnet Projects\Carsties\Carsties\src\Services\Auction.Service\Auction.Domain\obj\Debug\net9.0\ref\Auction.Domain.dll

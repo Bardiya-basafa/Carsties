@@ -1,0 +1,11 @@
+E:\Dotnet Projects\Carsties\Carsties\src\Services\Bidding.Service\Bidding.Domain\bin\Debug\net9.0\Bidding.Domain.deps.json
+E:\Dotnet Projects\Carsties\Carsties\src\Services\Bidding.Service\Bidding.Domain\bin\Debug\net9.0\Bidding.Domain.dll
+E:\Dotnet Projects\Carsties\Carsties\src\Services\Bidding.Service\Bidding.Domain\bin\Debug\net9.0\Bidding.Domain.pdb
+E:\Dotnet Projects\Carsties\Carsties\src\Services\Bidding.Service\Bidding.Domain\obj\Debug\net9.0\Bidding.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Dotnet Projects\Carsties\Carsties\src\Services\Bidding.Service\Bidding.Domain\obj\Debug\net9.0\Bidding.Domain.AssemblyInfoInputs.cache
+E:\Dotnet Projects\Carsties\Carsties\src\Services\Bidding.Service\Bidding.Domain\obj\Debug\net9.0\Bidding.Domain.AssemblyInfo.cs
+E:\Dotnet Projects\Carsties\Carsties\src\Services\Bidding.Service\Bidding.Domain\obj\Debug\net9.0\Bidding.Domain.csproj.CoreCompileInputs.cache
+E:\Dotnet Projects\Carsties\Carsties\src\Services\Bidding.Service\Bidding.Domain\obj\Debug\net9.0\Bidding.Domain.dll
+E:\Dotnet Projects\Carsties\Carsties\src\Services\Bidding.Service\Bidding.Domain\obj\Debug\net9.0\refint\Bidding.Domain.dll
+E:\Dotnet Projects\Carsties\Carsties\src\Services\Bidding.Service\Bidding.Domain\obj\Debug\net9.0\Bidding.Domain.pdb
+E:\Dotnet Projects\Carsties\Carsties\src\Services\Bidding.Service\Bidding.Domain\obj\Debug\net9.0\ref\Bidding.Domain.dll

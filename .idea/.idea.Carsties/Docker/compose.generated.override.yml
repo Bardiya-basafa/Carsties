@@ -1,0 +1,59 @@
+# This is a generated file. Not intended for manual editing.
+services:
+  auction.api:
+    build:
+      context: "E:\\Dotnet Projects\\Carsties\\Carsties"
+      dockerfile: "src/Services/Auction.Service/Auction.Api/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net9.0/Auction.Api.dll"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "auction.api:dev"
+    ports: []
+    volumes:
+    - "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Auction.Service\\Auction.Api:/app:rw"
+    - "E:\\Dotnet Projects\\Carsties\\Carsties:/src:rw"
+    - "C:\\Users\\Notebook\\.nuget\\packages:/home/app/.nuget/packages"
+    working_dir: "/app"
+  identity.server:
+    build:
+      context: "E:\\Dotnet Projects\\Carsties\\Carsties"
+      dockerfile: "src/Services/Identity.Service/Identity.Server/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/Identity.Server.dll"
+    environment:
+      ASPNETCORE_STATICWEBASSETS: "/app/bin/Debug/net8.0/Identity.Server.staticwebassets.runtime.CT.json"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "identity.server:dev"
+    ports: []
+    volumes:
+    - "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Identity.Service\\\
+      Identity.Server:/app:rw"
+    - "E:\\Dotnet Projects\\Carsties\\Carsties:/src:rw"
+    - "C:\\Users\\Notebook\\.nuget\\packages:/home/app/.nuget/packages"
+    working_dir: "/app"
+  search.api:
+    build:
+      context: "E:\\Dotnet Projects\\Carsties\\Carsties"
+      dockerfile: "src/Services/Search.Service/Search.Api/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net9.0/Search.Api.dll"
+    environment:
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "search.api:dev"
+    ports: []
+    volumes:
+    - "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Search.Service\\Search.Api:/app:rw"
+    - "E:\\Dotnet Projects\\Carsties\\Carsties:/src:rw"
+    - "C:\\Users\\Notebook\\.nuget\\packages:/home/app/.nuget/packages"
+    working_dir: "/app"

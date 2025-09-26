@@ -1,0 +1,152 @@
+﻿services:
+  auction.api:
+    container_name: auction.api
+    build:
+      context: .
+      dockerfile: src/Services/Auction.Service/Auction.Api/Dockerfile
+    ports:
+      - "7001:8080"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - ASPNETCORE_HTTP_PORTS=8080F
+      - REDIS_HOST=auction.cache
+      - REDIS_PORT=6379
+      - ASPNETCORE_URLS=http://+:8080
+      - RabbitMq__Host=rabbitmq
+      - RabbitMq__Port=5672
+      - RabbitMq__Username=guest
+      - RabbitMq__Password=guest
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+      auction.db:
+        condition: service_healthy
+      auction.cache:
+        condition: service_healthy
+  
+  auction.db:
+    image: postgres
+    container_name: auction.db
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=auctions
+    volumes:
+      - postgres_auction_db:/var/lib/postgresql/data
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U postgres" ]
+      interval: 3s
+      timeout: 3s
+      retries: 5
+  
+  auction.cache:
+    image: redis
+    container_name: auction.cache
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: [ "CMD", "redis-cli", "ping" ]
+      interval: 3s
+      timeout: 3s
+      retries: 5
+  
+  identity.server:
+    container_name: identity.server
+    build:
+      context: .
+      dockerfile: src/Services/Identity.Service/Identity.Server/Dockerfile
+    ports:
+      - "5000:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    depends_on:
+      identity.db:
+        condition: service_healthy
+  
+  
+  identity.db:
+    image: postgres
+    container_name: identity.db
+    ports:
+      - "5433:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=identity
+    volumes:
+      - postgres_identity_db:/var/lib/postgresql/data
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U postgres" ]
+      interval: 3s
+      timeout: 3s
+      retries: 5
+
+
+  search.api:
+    container_name: search.api
+    build:
+      context: .
+      dockerfile: src/Services/Search.Service/Search.Api/Dockerfile
+    ports:
+      - "7002:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=8080
+      - RabbitMq__Host=rabbitmq
+      - RabbitMq__Port=5672
+      - RabbitMq__Username=guest
+      - RabbitMq__Password=guest
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+      search.db:
+        condition: service_healthy
+      auction.api:
+        condition: service_started
+
+  search.db:
+    image: mongo
+    container_name: search.db
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=mongo
+      - MONGO_INITDB_DATABASE=searchdb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_search_db:/data/db
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "mongosh",
+          "--quiet",
+          "127.0.0.1/test",
+          "--eval",
+          "'quit(db.runCommand({ ping: 1 }).ok ? 0 : 2)'",
+        ]
+      interval: 3s
+      timeout: 3s
+      retries: 5
+
+  rabbitmq:
+    image: rabbitmq:management
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    healthcheck:
+      test: rabbitmq-diagnostics check_port_connectivity
+      interval: 3s
+      timeout: 3s
+      retries: 5
+
+volumes:
+  postgres_auction_db:
+  postgres_identity_db:
+  mongo_search_db:

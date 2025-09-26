@@ -1,0 +1,11 @@
+E:\Dotnet Projects\Carsties\Carsties\src\Services\Bidding.Service\Bidding.Infrastructure\bin\Debug\net9.0\Bidding.Infrastructure.deps.json
+E:\Dotnet Projects\Carsties\Carsties\src\Services\Bidding.Service\Bidding.Infrastructure\bin\Debug\net9.0\Bidding.Infrastructure.dll
+E:\Dotnet Projects\Carsties\Carsties\src\Services\Bidding.Service\Bidding.Infrastructure\bin\Debug\net9.0\Bidding.Infrastructure.pdb
+E:\Dotnet Projects\Carsties\Carsties\src\Services\Bidding.Service\Bidding.Infrastructure\obj\Debug\net9.0\Bidding.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\Dotnet Projects\Carsties\Carsties\src\Services\Bidding.Service\Bidding.Infrastructure\obj\Debug\net9.0\Bidding.Infrastructure.AssemblyInfoInputs.cache
+E:\Dotnet Projects\Carsties\Carsties\src\Services\Bidding.Service\Bidding.Infrastructure\obj\Debug\net9.0\Bidding.Infrastructure.AssemblyInfo.cs
+E:\Dotnet Projects\Carsties\Carsties\src\Services\Bidding.Service\Bidding.Infrastructure\obj\Debug\net9.0\Bidding.Infrastructure.csproj.CoreCompileInputs.cache
+E:\Dotnet Projects\Carsties\Carsties\src\Services\Bidding.Service\Bidding.Infrastructure\obj\Debug\net9.0\Bidding.Infrastructure.dll
+E:\Dotnet Projects\Carsties\Carsties\src\Services\Bidding.Service\Bidding.Infrastructure\obj\Debug\net9.0\refint\Bidding.Infrastructure.dll
+E:\Dotnet Projects\Carsties\Carsties\src\Services\Bidding.Service\Bidding.Infrastructure\obj\Debug\net9.0\Bidding.Infrastructure.pdb
+E:\Dotnet Projects\Carsties\Carsties\src\Services\Bidding.Service\Bidding.Infrastructure\obj\Debug\net9.0\ref\Bidding.Infrastructure.dll
