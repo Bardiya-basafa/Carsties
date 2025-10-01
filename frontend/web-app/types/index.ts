@@ -12,6 +12,7 @@ export type Auction = {
     currentHighBid: number
     createdAt: string
     updatedAt: string
+    auctionEnd: string
     status: string
     make: string
     model: string
