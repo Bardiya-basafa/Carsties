@@ -15,3 +15,4 @@ E:\Dotnet Projects\Carsties\Carsties\src\Services\Auction.Service\Auction.Applic
 E:\Dotnet Projects\Carsties\Carsties\src\Services\Auction.Service\Auction.Application\obj\Debug\net9.0\refint\Auction.Application.dll
 E:\Dotnet Projects\Carsties\Carsties\src\Services\Auction.Service\Auction.Application\obj\Debug\net9.0\Auction.Application.pdb
 E:\Dotnet Projects\Carsties\Carsties\src\Services\Auction.Service\Auction.Application\obj\Debug\net9.0\ref\Auction.Application.dll
+E:\Dotnet Projects\Carsties\Carsties\src\Services\Auction.Service\Auction.Application\obj\Debug\net9.0\Auction.Application.sourcelink.json

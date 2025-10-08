@@ -1,5 +1,5 @@
-import {Bid} from "@/types";
-import {create} from "zustand";
+import { Bid } from "@/types";
+import { create } from "zustand";
 
 type State = {
     bids: Bid[]

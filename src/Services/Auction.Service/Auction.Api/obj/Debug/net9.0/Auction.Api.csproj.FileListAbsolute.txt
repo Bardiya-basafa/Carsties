@@ -175,4 +175,4 @@ E:\Dotnet Projects\Carsties\Carsties\src\Services\Auction.Service\Auction.Api\bi
 E:\Dotnet Projects\Carsties\Carsties\src\Services\Auction.Service\Auction.Api\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
 E:\Dotnet Projects\Carsties\Carsties\src\Services\Auction.Service\Auction.Api\bin\Debug\net9.0\System.IO.Hashing.dll
 E:\Dotnet Projects\Carsties\Carsties\src\Services\Auction.Service\Auction.Api\bin\Debug\net9.0\Yarp.ReverseProxy.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Auction.Service\Auction.Api\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+E:\Dotnet Projects\Carsties\Carsties\src\Services\Auction.Service\Auction.Api\obj\Debug\net9.0\Auction.Api.sourcelink.json

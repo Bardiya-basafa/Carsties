@@ -6,7 +6,8 @@ import BidList from "@/app/auctions/details/[id]/BidList";
 import DetailedSpecs from "@/app/auctions/details/[id]/DetailedSpecs";
 import CountDownTimer from "@/app/auctions/CountDownTimer";
 import DeleteButton from "@/app/auctions/details/[id]/DeleteButton";
-
+import {getCurrentUser} from "@/app/actions/authActions";
+import { getDetailedViewData } from "@/app/actions/auctionActions";
 
 
 export default async function Details({params}: { params: { id: string } }) {
@@ -17,9 +18,9 @@ export default async function Details({params}: { params: { id: string } }) {
             <div className="flex justify-between">
                 <div className="flex items-center gap-3">
                     <Heading title={`${data.make} ${data.model}`}/> {user?.username === data.seller && (
-                    <>
+                    <div>
                         <EditButton id={data.id}/> <DeleteButton id={data.id}/>
-                    </>
+                    </div>
 
                 )}
                 </div>

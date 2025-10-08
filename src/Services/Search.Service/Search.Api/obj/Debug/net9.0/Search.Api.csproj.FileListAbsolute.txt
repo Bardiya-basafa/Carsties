@@ -31,7 +31,6 @@ E:\Dotnet Projects\Carsties\Carsties\src\Services\Search.Service\Search.Api\obj\
 E:\Dotnet Projects\Carsties\Carsties\src\Services\Search.Service\Search.Api\obj\Debug\net9.0\staticwebassets.build.json.cache
 E:\Dotnet Projects\Carsties\Carsties\src\Services\Search.Service\Search.Api\obj\Debug\net9.0\staticwebassets.development.json
 E:\Dotnet Projects\Carsties\Carsties\src\Services\Search.Service\Search.Api\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Search.Service\Search.Api\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 E:\Dotnet Projects\Carsties\Carsties\src\Services\Search.Service\Search.Api\obj\Debug\net9.0\Search.Api.csproj.Up2Date
 E:\Dotnet Projects\Carsties\Carsties\src\Services\Search.Service\Search.Api\obj\Debug\net9.0\Search.Api.dll
 E:\Dotnet Projects\Carsties\Carsties\src\Services\Search.Service\Search.Api\obj\Debug\net9.0\refint\Search.Api.dll
@@ -78,3 +77,4 @@ E:\Dotnet Projects\Carsties\Carsties\src\Services\Search.Service\Search.Api\bin\
 E:\Dotnet Projects\Carsties\Carsties\src\Services\Search.Service\Search.Api\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
 E:\Dotnet Projects\Carsties\Carsties\src\Services\Search.Service\Search.Api\bin\Debug\net9.0\System.IO.Hashing.dll
 E:\Dotnet Projects\Carsties\Carsties\src\Services\Search.Service\Search.Api\bin\Debug\net9.0\Yarp.ReverseProxy.dll
+E:\Dotnet Projects\Carsties\Carsties\src\Services\Search.Service\Search.Api\obj\Debug\net9.0\Search.Api.sourcelink.json

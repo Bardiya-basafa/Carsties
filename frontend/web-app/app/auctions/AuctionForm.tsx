@@ -1,12 +1,13 @@
 ﻿import {Auction} from "@/types";
 import {useRouter} from "next/router";
 import {usePathname} from "next/navigation";
-import {FieldValue, FieldValues, useForm} from "react-hook-form";
+import {FieldValues, useForm} from "react-hook-form";
 import {useEffect} from "react";
 import toast from "react-hot-toast";
 import DateInput from "@/app/components/DateInput";
 import {Button} from "flowbite-react";
 import Input from '../components/Input';
+import { createAuction, updateAuction } from "../actions/auctionActions";
 
 
 type Props = {
@@ -15,7 +16,7 @@ type Props = {
 export default function AuctionForm(props: Props) {
     const router = useRouter();
     const pathname = usePathname();
-    const {control, handleSubmit, setFocus, reset, formState: {isSubmitted, isValid}} = useForm({
+    const {control, handleSubmit, setFocus, reset, formState: {isSubmitting, isValid, isDirty}} = useForm({
         mode: "onTouched",
     });
     useEffect(() => {
@@ -34,7 +35,7 @@ export default function AuctionForm(props: Props) {
                 res = await createAuction(data);
                 id = res.id;
             } else {
-                if (auction) {
+                if (props.auction) {
                     res = await updateAuction(data, props.auction.id);
                     id = props.auction.id;
                 }
@@ -68,7 +69,7 @@ export default function AuctionForm(props: Props) {
                 </>}
             <div className="flex justify-between">
                 <Button outline color="gray">Cancel</Button>
-                <Button isProcessing={isSubmitted} disabled={!isValid} type="submit" outline color="success">Submit</Button>
+                <Button disabled={!isValid || isSubmitting} type="submit" outline color="success">Submit</Button>
             </div>
         </form>
     )

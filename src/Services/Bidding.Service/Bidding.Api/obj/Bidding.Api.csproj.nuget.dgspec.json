@@ -43,6 +43,42 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Google.Protobuf": {
+              "target": "Package",
+              "version": "[3.32.1, )"
+            },
+            "Grpc.Net.Client": {
+              "target": "Package",
+              "version": "[2.71.0, )"
+            },
+            "Grpc.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.72.0, )"
+            },
+            "Mapster": {
+              "target": "Package",
+              "version": "[7.4.0, )"
+            },
+            "MassTransit.RabbitMQ": {
+              "target": "Package",
+              "version": "[8.5.4, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
+            "MongoDB.Entities": {
+              "target": "Package",
+              "version": "[24.1.1, )"
+            },
+            "Polly": {
+              "target": "Package",
+              "version": "[8.6.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

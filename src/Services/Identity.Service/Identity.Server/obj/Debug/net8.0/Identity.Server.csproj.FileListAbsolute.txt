@@ -163,7 +163,6 @@ E:\Dotnet Projects\Carsties\Carsties\src\Services\Identity.Service\Identity.Serv
 E:\Dotnet Projects\Carsties\Carsties\src\Services\Identity.Service\Identity.Server\obj\Debug\net8.0\ref\Identity.Server.dll
 E:\Dotnet Projects\Carsties\Carsties\src\Services\Identity.Service\Identity.Server\bin\Debug\net8.0\Npgsql.dll
 E:\Dotnet Projects\Carsties\Carsties\src\Services\Identity.Service\Identity.Server\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Identity.Service\Identity.Server\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 E:\Dotnet Projects\Carsties\Carsties\src\Services\Identity.Service\Identity.Server\bin\Debug\net8.0\keys\is-signing-key-C8B19DDA748B53A55D112E964F7EDFC7.json
 E:\Dotnet Projects\Carsties\Carsties\src\Services\Identity.Service\Identity.Server\bin\Debug\net8.0\keys\is-signing-key-B46BE8959FE6B70D11F8A0C9559BC2B7.json
 E:\Dotnet Projects\Carsties\Carsties\src\Services\Identity.Service\Identity.Server\bin\Debug\net8.0\keys\is-signing-key-E9B207A51801BF37F612B79AABC93ECC.json
@@ -171,3 +170,5 @@ E:\Dotnet Projects\Carsties\Carsties\src\Services\Identity.Service\Identity.Serv
 E:\Dotnet Projects\Carsties\Carsties\src\Services\Identity.Service\Identity.Server\bin\Debug\net8.0\keys\is-signing-key-0CD82632881F8ED8B4A5743224D1AE3E.json
 E:\Dotnet Projects\Carsties\Carsties\src\Services\Identity.Service\Identity.Server\bin\Debug\net8.0\keys\is-signing-key-1A9A5B9BBB23915BF707E0FED2DA36FE.json
 E:\Dotnet Projects\Carsties\Carsties\src\Services\Identity.Service\Identity.Server\bin\Debug\net8.0\keys\is-signing-key-ADA597207CEE8A9D58FE4B7B3647586E.json
+E:\Dotnet Projects\Carsties\Carsties\src\Services\Identity.Service\Identity.Server\bin\Debug\net8.0\keys\is-signing-key-74768D577D6DA6385E46BD63BB8621E5.json
+E:\Dotnet Projects\Carsties\Carsties\src\Services\Identity.Service\Identity.Server\obj\Debug\net8.0\Identity.Server.sourcelink.json

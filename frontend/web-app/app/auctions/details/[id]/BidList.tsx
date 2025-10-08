@@ -3,6 +3,11 @@ import {Auction, Bid} from "@/types";
 import {useEffect, useState} from "react";
 import {useBidStore} from "@/hooks/useBidStore";
 import toast from "react-hot-toast";
+import { getBidsForAuction } from "@/app/actions/auctionActions";
+import BidForm from "./BidForm";
+import BidItem from "./BidItem";
+import EmptyFilter from "@/app/components/EmptyFilter";
+import Heading from "@/app/components/Heading";
 
 type Props = {
     user: User | null;

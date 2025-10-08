@@ -20,9 +20,12 @@ E:\Dotnet Projects\Carsties\Carsties\src\Services\Bidding.Service\Bidding.Api\ob
 E:\Dotnet Projects\Carsties\Carsties\src\Services\Bidding.Service\Bidding.Api\obj\Debug\net9.0\staticwebassets.build.json.cache
 E:\Dotnet Projects\Carsties\Carsties\src\Services\Bidding.Service\Bidding.Api\obj\Debug\net9.0\staticwebassets.development.json
 E:\Dotnet Projects\Carsties\Carsties\src\Services\Bidding.Service\Bidding.Api\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Bidding.Service\Bidding.Api\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 E:\Dotnet Projects\Carsties\Carsties\src\Services\Bidding.Service\Bidding.Api\obj\Debug\net9.0\Bidding.Api.dll
 E:\Dotnet Projects\Carsties\Carsties\src\Services\Bidding.Service\Bidding.Api\obj\Debug\net9.0\refint\Bidding.Api.dll
 E:\Dotnet Projects\Carsties\Carsties\src\Services\Bidding.Service\Bidding.Api\obj\Debug\net9.0\Bidding.Api.pdb
 E:\Dotnet Projects\Carsties\Carsties\src\Services\Bidding.Service\Bidding.Api\obj\Debug\net9.0\Bidding.Api.genruntimeconfig.cache
 E:\Dotnet Projects\Carsties\Carsties\src\Services\Bidding.Service\Bidding.Api\obj\Debug\net9.0\ref\Bidding.Api.dll
+E:\Dotnet Projects\Carsties\Carsties\src\Services\Bidding.Service\Bidding.Api\bin\Debug\net9.0\Google.Protobuf.dll
+E:\Dotnet Projects\Carsties\Carsties\src\Services\Bidding.Service\Bidding.Api\obj\Debug\net9.0\Bidding.Api.csproj.AssemblyReference.cache
+E:\Dotnet Projects\Carsties\Carsties\src\Services\Bidding.Service\Bidding.Api\obj\Debug\net9.0\Bidding.Api.sourcelink.json
+E:\Dotnet Projects\Carsties\Carsties\src\Services\Bidding.Service\Bidding.Api\obj\Debug\net9.0\Bidding..F6D2038D.Up2Date

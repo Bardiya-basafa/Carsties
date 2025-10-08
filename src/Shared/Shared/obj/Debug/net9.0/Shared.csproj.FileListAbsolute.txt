@@ -10,3 +10,4 @@ E:\Dotnet Projects\Carsties\Carsties\src\Shared\Shared\obj\Debug\net9.0\Shared.d
 E:\Dotnet Projects\Carsties\Carsties\src\Shared\Shared\obj\Debug\net9.0\refint\Shared.dll
 E:\Dotnet Projects\Carsties\Carsties\src\Shared\Shared\obj\Debug\net9.0\Shared.pdb
 E:\Dotnet Projects\Carsties\Carsties\src\Shared\Shared\obj\Debug\net9.0\ref\Shared.dll
+E:\Dotnet Projects\Carsties\Carsties\src\Shared\Shared\obj\Debug\net9.0\Shared.sourcelink.json
