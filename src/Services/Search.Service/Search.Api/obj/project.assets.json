@@ -2852,32 +2852,33 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Notebook\\.nuget\\packages\\": {}
+    "/home/bardiya/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Search.Service\\Search.Api\\Search.Api.csproj",
+      "projectUniqueName": "/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Search.Service/Search.Api/Search.Api.csproj",
       "projectName": "Search.Api",
-      "projectPath": "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Search.Service\\Search.Api\\Search.Api.csproj",
-      "packagesPath": "C:\\Users\\Notebook\\.nuget\\packages\\",
-      "outputPath": "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Search.Service\\Search.Api\\obj\\",
+      "projectPath": "/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Search.Service/Search.Api/Search.Api.csproj",
+      "packagesPath": "/home/bardiya/.nuget/packages/",
+      "outputPath": "/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Search.Service/Search.Api/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Notebook\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/bardiya/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
+        "/usr/lib/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Shared\\Shared\\Shared.csproj": {
-              "projectPath": "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Shared\\Shared\\Shared.csproj"
+            "/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Shared/Shared/Shared.csproj": {
+              "projectPath": "/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Shared/Shared/Shared.csproj"
             }
           }
         }
@@ -2892,7 +2893,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net9.0": {
@@ -2942,7 +2943,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.110/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

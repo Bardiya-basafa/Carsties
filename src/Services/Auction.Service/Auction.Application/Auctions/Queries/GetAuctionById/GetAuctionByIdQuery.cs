@@ -6,7 +6,7 @@ using Shared.Abstractions.CQRS;
 
 public record GetAuctionByIdQuery(Guid Id) : IQuery<GetAuctionByIdResult>;
 
-public record GetAuctionByIdResult(Guid Id, string Seller, int SoldAmount, DateTime UpdatedAt, DateTime AuctionEnd, Status Status, string Make, string Model, int Year, string Color, int Mileage, string ImageUrl);
+public record GetAuctionByIdResult(Guid Id, string Seller, int SoldAmount, DateTime UpdatedAt, DateTime AuctionEnd, Status Status, string Make, string Model, int Year, string Color, int Mileage, string ImageUrl,int ReservePrice);
 
 
 public class GetAuctionByIdQueryValidator : AbstractValidator<GetAuctionByIdQuery> {

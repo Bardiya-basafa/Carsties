@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "bi4vRxpca7g=",
+  "success": true,
+  "projectFilePath": "/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Notification.Service/Notification.Service/Notification.Service.csproj",
+  "expectedPackageFiles": [
+    "/home/bardiya/.nuget/packages/microsoft.aspnetcore.openapi/9.0.9/microsoft.aspnetcore.openapi.9.0.9.nupkg.sha512",
+    "/home/bardiya/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
