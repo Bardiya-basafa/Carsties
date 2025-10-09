@@ -23,8 +23,10 @@ builder.Services.AddApplication();
 builder.Services.AddHealthChecks();
 
 
-builder.Services.AddMassTransit(x => {
-    x.AddEntityFrameworkOutbox<AppDbContext>(o => {
+builder.Services.AddMassTransit(x =>
+{
+    x.AddEntityFrameworkOutbox<AppDbContext>(o =>
+    {
         o.QueryDelay = TimeSpan.FromSeconds(10);
         o.UsePostgres();
         o.UseBusOutbox();
@@ -33,19 +35,22 @@ builder.Services.AddMassTransit(x => {
     x.AddConsumersFromNamespaceContaining<AuctionCreatedFaultConsumer>();
     x.SetEndpointNameFormatter(new KebabCaseEndpointNameFormatter("auction", false));
 
-    x.UsingRabbitMq((context, cfg) => {
-        cfg.UseRetry(r => {
+    x.UsingRabbitMq((context, cfg) =>
+    {
+        cfg.UseRetry(r =>
+        {
             r.Handle<RabbitMqConnectionException>();
             r.Interval(5, TimeSpan.FromSeconds(10));
         });
 
 
         cfg.Host("rabbitmq",
-        "/",
-        h => {
-            h.Username("guest");
-            h.Password("guest");
-        });
+            "/",
+            h =>
+            {
+                h.Username("guest");
+                h.Password("guest");
+            });
 
 
         cfg.ConfigureEndpoints(context);
@@ -53,8 +58,9 @@ builder.Services.AddMassTransit(x => {
 });
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-    .AddJwtBearer(options => {
-        options.Authority = "http://identity.server:8080";
+    .AddJwtBearer(options =>
+    {
+        options.Authority = builder.Configuration["IdentityServiceUrl"];
         options.RequireHttpsMetadata = false;
         options.TokenValidationParameters.ValidateAudience = false;
         options.TokenValidationParameters.NameClaimType = "username";
@@ -64,7 +70,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 
-builder.Services.AddMediatR(cfg => {
+builder.Services.AddMediatR(cfg =>
+{
     cfg.RegisterServicesFromAssembly(typeof(Program).Assembly);
     cfg.RegisterServicesFromAssemblyContaining<GetAuctionsQueryHandler>();
     cfg.AddBehavior(typeof(IPipelineBehavior<,>), typeof(ValidationPipelineBehavior<,>));
@@ -73,14 +80,17 @@ builder.Services.AddMediatR(cfg => {
 
 var app = builder.ConfigureLogging().Build();
 
-using (var scope = app.Services.CreateScope()){
+using (var scope = app.Services.CreateScope())
+{
     var services = scope.ServiceProvider;
 
-    try{
+    try
+    {
         var context = services.GetRequiredService<AppDbContext>();
         await context.Database.MigrateAsync();
     }
-    catch (Exception ex){
+    catch (Exception ex)
+    {
         var logger = services.GetRequiredService<ILogger<Program>>();
         logger.LogError(ex, "An error occurred while migrating the database.");
     }
@@ -93,7 +103,8 @@ app.MapHealthChecks("/health");
 
 app.UseSwagger();
 
-app.UseSwaggerUI(c => {
+app.UseSwaggerUI(c =>
+{
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
     c.RoutePrefix = string.Empty;
 });
