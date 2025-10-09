@@ -41,6 +41,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gateway.Server", "src\Servi
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "frontend", "frontend", "{EE6C2221-F4F0-4032-90E0-B701BD08D9CB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notification.Service", "Notification.Service", "{17C3971F-7BA3-4F3C-A9D1-01E820B4A899}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notification.Service", "src\Services\Notification.Service\Notification.Service\Notification.Service.csproj", "{42B7BB99-70BF-46FE-89D2-64F1DBBBDC34}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +67,8 @@ Global
 		{5487D48E-4CE4-4885-B4BD-3B213FC24954} = {0512195B-D790-4118-8930-161043650BC8}
 		{BDC018A9-2552-4DC6-86CC-375145FA0EA8} = {ED55C508-7A26-4A60-8BF2-70F9329D83E7}
 		{4486495D-637A-4049-BADC-DB04187215E5} = {BDC018A9-2552-4DC6-86CC-375145FA0EA8}
+		{17C3971F-7BA3-4F3C-A9D1-01E820B4A899} = {ED55C508-7A26-4A60-8BF2-70F9329D83E7}
+		{42B7BB99-70BF-46FE-89D2-64F1DBBBDC34} = {17C3971F-7BA3-4F3C-A9D1-01E820B4A899}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{042A4E89-DDA3-4131-998F-F6865C2303F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -101,5 +107,9 @@ Global
 		{4486495D-637A-4049-BADC-DB04187215E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4486495D-637A-4049-BADC-DB04187215E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4486495D-637A-4049-BADC-DB04187215E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42B7BB99-70BF-46FE-89D2-64F1DBBBDC34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42B7BB99-70BF-46FE-89D2-64F1DBBBDC34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42B7BB99-70BF-46FE-89D2-64F1DBBBDC34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42B7BB99-70BF-46FE-89D2-64F1DBBBDC34}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

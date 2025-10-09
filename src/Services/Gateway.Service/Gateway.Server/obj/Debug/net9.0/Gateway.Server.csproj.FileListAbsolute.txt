@@ -1,71 +1,143 @@
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\appsettings.Development.json
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\appsettings.json
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\Gateway.Server.staticwebassets.endpoints.json
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\Gateway.Server.exe
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\Gateway.Server.deps.json
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\Gateway.Server.runtimeconfig.json
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\Gateway.Server.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\Gateway.Server.pdb
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\FluentValidation.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\Mapster.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\Mapster.Core.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\MassTransit.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\MassTransit.Abstractions.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\MassTransit.EntityFrameworkCoreIntegration.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\MassTransit.RabbitMqTransport.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\MediatR.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\MediatR.Contracts.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\Microsoft.Extensions.Caching.Abstractions.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\Microsoft.Extensions.Caching.Memory.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\Microsoft.Extensions.Configuration.Abstractions.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\Microsoft.OpenApi.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\Polly.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\Polly.Core.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\RabbitMQ.Client.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\System.IO.Hashing.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\Yarp.ReverseProxy.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\Shared.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\bin\Debug\net9.0\Shared.pdb
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\obj\Debug\net9.0\Gateway.Server.csproj.AssemblyReference.cache
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\obj\Debug\net9.0\rpswa.dswa.cache.json
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\obj\Debug\net9.0\Gateway.Server.GeneratedMSBuildEditorConfig.editorconfig
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\obj\Debug\net9.0\Gateway.Server.AssemblyInfoInputs.cache
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\obj\Debug\net9.0\Gateway.Server.AssemblyInfo.cs
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\obj\Debug\net9.0\Gateway.Server.csproj.CoreCompileInputs.cache
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\obj\Debug\net9.0\Gateway.Server.MvcApplicationPartsAssemblyInfo.cs
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\obj\Debug\net9.0\Gateway.Server.MvcApplicationPartsAssemblyInfo.cache
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\obj\Debug\net9.0\Gateway.Server.sourcelink.json
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\obj\Debug\net9.0\rjimswa.dswa.cache.json
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\obj\Debug\net9.0\scopedcss\bundle\Gateway.Server.styles.css
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\obj\Debug\net9.0\staticwebassets.build.json
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\obj\Debug\net9.0\staticwebassets.build.json.cache
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\obj\Debug\net9.0\staticwebassets.development.json
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\obj\Debug\net9.0\Gateway..F146E62C.Up2Date
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\obj\Debug\net9.0\Gateway.Server.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\obj\Debug\net9.0\refint\Gateway.Server.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\obj\Debug\net9.0\Gateway.Server.pdb
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\obj\Debug\net9.0\Gateway.Server.genruntimeconfig.cache
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Gateway.Service\Gateway.Server\obj\Debug\net9.0\ref\Gateway.Server.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/appsettings.Development.json
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/appsettings.json
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Gateway.Server.staticwebassets.endpoints.json
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Gateway.Server.exe
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Gateway.Server.deps.json
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Gateway.Server.runtimeconfig.json
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Gateway.Server.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Gateway.Server.pdb
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/FluentValidation.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Mapster.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Mapster.Core.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/MassTransit.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/MassTransit.Abstractions.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/MassTransit.EntityFrameworkCoreIntegration.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/MassTransit.RabbitMqTransport.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/MediatR.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/MediatR.Contracts.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Relational.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Microsoft.Extensions.Caching.Abstractions.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Microsoft.Extensions.Caching.Memory.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Microsoft.Extensions.Configuration.Abstractions.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Microsoft.Extensions.DependencyInjection.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Microsoft.Extensions.Logging.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Microsoft.Extensions.Logging.Abstractions.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Microsoft.Extensions.Options.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Microsoft.Extensions.Primitives.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Microsoft.IdentityModel.Abstractions.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Microsoft.OpenApi.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Polly.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Polly.Core.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/RabbitMQ.Client.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Swashbuckle.AspNetCore.Swagger.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/System.IO.Hashing.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Yarp.ReverseProxy.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Shared.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Shared.pdb
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/Gateway.Server.csproj.AssemblyReference.cache
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/rpswa.dswa.cache.json
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/Gateway.Server.GeneratedMSBuildEditorConfig.editorconfig
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/Gateway.Server.AssemblyInfoInputs.cache
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/Gateway.Server.AssemblyInfo.cs
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/Gateway.Server.csproj.CoreCompileInputs.cache
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/Gateway.Server.MvcApplicationPartsAssemblyInfo.cs
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/Gateway.Server.MvcApplicationPartsAssemblyInfo.cache
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/Gateway.Server.sourcelink.json
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/rjimswa.dswa.cache.json
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/rjsmrazor.dswa.cache.json
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/scopedcss/bundle/Gateway.Server.styles.css
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/staticwebassets.build.json
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/staticwebassets.build.json.cache
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/staticwebassets.development.json
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/staticwebassets.build.endpoints.json
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/Gateway..F146E62C.Up2Date
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/Gateway.Server.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/refint/Gateway.Server.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/Gateway.Server.pdb
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/Gateway.Server.genruntimeconfig.cache
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/ref/Gateway.Server.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/appsettings.Development.json
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/appsettings.json
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Gateway.Server.staticwebassets.endpoints.json
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Gateway.Server
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Gateway.Server.deps.json
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Gateway.Server.runtimeconfig.json
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Gateway.Server.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Gateway.Server.pdb
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/FluentValidation.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Mapster.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Mapster.Core.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/MassTransit.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/MassTransit.Abstractions.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/MassTransit.EntityFrameworkCoreIntegration.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/MassTransit.RabbitMqTransport.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/MediatR.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/MediatR.Contracts.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Relational.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Microsoft.Extensions.Caching.Abstractions.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Microsoft.Extensions.Caching.Memory.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Microsoft.Extensions.Configuration.Abstractions.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Microsoft.Extensions.DependencyInjection.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Microsoft.Extensions.Logging.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Microsoft.Extensions.Logging.Abstractions.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Microsoft.Extensions.Options.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Microsoft.Extensions.Primitives.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Microsoft.IdentityModel.Abstractions.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Microsoft.OpenApi.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Polly.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Polly.Core.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/RabbitMQ.Client.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Swashbuckle.AspNetCore.Swagger.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/System.IO.Hashing.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Yarp.ReverseProxy.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Shared.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/bin/Debug/net9.0/Shared.pdb
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/Gateway.Server.csproj.AssemblyReference.cache
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/Gateway.Server.GeneratedMSBuildEditorConfig.editorconfig
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/Gateway.Server.AssemblyInfoInputs.cache
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/Gateway.Server.AssemblyInfo.cs
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/Gateway.Server.csproj.CoreCompileInputs.cache
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/Gateway.Server.MvcApplicationPartsAssemblyInfo.cs
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/Gateway.Server.MvcApplicationPartsAssemblyInfo.cache
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/Gateway.Server.sourcelink.json
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/scopedcss/bundle/Gateway.Server.styles.css
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/staticwebassets.build.json
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/staticwebassets.development.json
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/staticwebassets.build.endpoints.json
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/staticwebassets/msbuild.Gateway.Server.Microsoft.AspNetCore.StaticWebAssets.props
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/staticwebassets/msbuild.Gateway.Server.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/staticwebassets/msbuild.build.Gateway.Server.props
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.Gateway.Server.props
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.Gateway.Server.props
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/staticwebassets.pack.json
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/Gateway..F146E62C.Up2Date
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/Gateway.Server.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/refint/Gateway.Server.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/Gateway.Server.pdb
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/Gateway.Server.genruntimeconfig.cache
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Gateway.Service/Gateway.Server/obj/Debug/net9.0/ref/Gateway.Server.dll

@@ -4013,24 +4013,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Notebook\\.nuget\\packages\\": {}
+    "/home/bardiya/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Identity.Service\\Identity.Server\\Identity.Server.csproj",
+      "projectUniqueName": "/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Identity.Service/Identity.Server/Identity.Server.csproj",
       "projectName": "Identity.Server",
-      "projectPath": "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Identity.Service\\Identity.Server\\Identity.Server.csproj",
-      "packagesPath": "C:\\Users\\Notebook\\.nuget\\packages\\",
-      "outputPath": "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Identity.Service\\Identity.Server\\obj\\",
+      "projectPath": "/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Identity.Service/Identity.Server/Identity.Server.csproj",
+      "packagesPath": "/home/bardiya/.nuget/packages/",
+      "outputPath": "/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Identity.Service/Identity.Server/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Notebook\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/bardiya/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "/usr/lib/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4049,7 +4050,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -4101,20 +4102,8 @@
         "warn": true,
         "downloadDependencies": [
           {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[8.0.17, 8.0.17]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[8.0.17, 8.0.17]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[8.0.17, 8.0.17]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[8.0.17, 8.0.17]"
+            "name": "Microsoft.NETCore.App.Host.linux-x64",
+            "version": "[8.0.20, 8.0.20]"
           }
         ],
         "frameworkReferences": {
@@ -4125,7 +4114,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.110/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

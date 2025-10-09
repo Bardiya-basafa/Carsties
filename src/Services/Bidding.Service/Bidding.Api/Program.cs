@@ -1,3 +1,5 @@
+using Bidding.Api.Consumers;
+using Bidding.Api.Services;
 using MassTransit;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using MongoDB.Driver;
@@ -8,7 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 
 builder.Services.AddMassTransit(x => {
-    x.AddConsumersFromNamespaceContaining<>();
+    x.AddConsumersFromNamespaceContaining<AuctionCreatedConsumer>();
     x.SetEndpointNameFormatter(new KebabCaseEndpointNameFormatter("bids", false));
 
     x.UsingRabbitMq((context, cfg) => {
@@ -38,7 +40,6 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
 builder.Services.AddHostedService<CheckAuctionFinishedService>();
 builder.Services.AddScoped<GrpcAuctionClient>();
-
 var app = builder.Build();
 
 app.UseAuthorization();

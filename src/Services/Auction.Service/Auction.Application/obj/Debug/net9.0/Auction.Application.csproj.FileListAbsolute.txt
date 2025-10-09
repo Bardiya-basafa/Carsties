@@ -1,18 +1,36 @@
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Auction.Service\Auction.Application\bin\Debug\net9.0\Auction.Application.deps.json
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Auction.Service\Auction.Application\bin\Debug\net9.0\Auction.Application.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Auction.Service\Auction.Application\bin\Debug\net9.0\Auction.Application.pdb
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Auction.Service\Auction.Application\bin\Debug\net9.0\Auction.Domain.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Auction.Service\Auction.Application\bin\Debug\net9.0\Shared.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Auction.Service\Auction.Application\bin\Debug\net9.0\Shared.pdb
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Auction.Service\Auction.Application\bin\Debug\net9.0\Auction.Domain.pdb
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Auction.Service\Auction.Application\obj\Debug\net9.0\Auction.Application.csproj.AssemblyReference.cache
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Auction.Service\Auction.Application\obj\Debug\net9.0\Auction.Application.GeneratedMSBuildEditorConfig.editorconfig
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Auction.Service\Auction.Application\obj\Debug\net9.0\Auction.Application.AssemblyInfoInputs.cache
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Auction.Service\Auction.Application\obj\Debug\net9.0\Auction.Application.AssemblyInfo.cs
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Auction.Service\Auction.Application\obj\Debug\net9.0\Auction.Application.csproj.CoreCompileInputs.cache
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Auction.Service\Auction.Application\obj\Debug\net9.0\Auction..5667E242.Up2Date
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Auction.Service\Auction.Application\obj\Debug\net9.0\Auction.Application.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Auction.Service\Auction.Application\obj\Debug\net9.0\refint\Auction.Application.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Auction.Service\Auction.Application\obj\Debug\net9.0\Auction.Application.pdb
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Auction.Service\Auction.Application\obj\Debug\net9.0\ref\Auction.Application.dll
-E:\Dotnet Projects\Carsties\Carsties\src\Services\Auction.Service\Auction.Application\obj\Debug\net9.0\Auction.Application.sourcelink.json
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Application/bin/Debug/net9.0/Auction.Application.deps.json
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Application/bin/Debug/net9.0/Auction.Application.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Application/bin/Debug/net9.0/Auction.Application.pdb
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Application/bin/Debug/net9.0/Auction.Domain.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Application/bin/Debug/net9.0/Shared.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Application/bin/Debug/net9.0/Shared.pdb
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Application/bin/Debug/net9.0/Auction.Domain.pdb
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Application/obj/Debug/net9.0/Auction.Application.csproj.AssemblyReference.cache
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Application/obj/Debug/net9.0/Auction.Application.GeneratedMSBuildEditorConfig.editorconfig
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Application/obj/Debug/net9.0/Auction.Application.AssemblyInfoInputs.cache
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Application/obj/Debug/net9.0/Auction.Application.AssemblyInfo.cs
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Application/obj/Debug/net9.0/Auction.Application.csproj.CoreCompileInputs.cache
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Application/obj/Debug/net9.0/Auction..5667E242.Up2Date
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Application/obj/Debug/net9.0/Auction.Application.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Application/obj/Debug/net9.0/refint/Auction.Application.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Application/obj/Debug/net9.0/Auction.Application.pdb
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Application/obj/Debug/net9.0/ref/Auction.Application.dll
+E:/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Application/obj/Debug/net9.0/Auction.Application.sourcelink.json
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Application/obj/Debug/net9.0/Auction.Application.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Application/obj/Debug/net9.0/refint/Auction.Application.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Application/obj/Debug/net9.0/Auction.Application.pdb
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Application/bin/Debug/net9.0/Auction.Application.deps.json
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Application/bin/Debug/net9.0/Auction.Application.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Application/bin/Debug/net9.0/Auction.Application.pdb
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Application/bin/Debug/net9.0/Auction.Domain.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Application/bin/Debug/net9.0/Shared.dll
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Application/bin/Debug/net9.0/Shared.pdb
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Application/bin/Debug/net9.0/Auction.Domain.pdb
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Application/obj/Debug/net9.0/Auction.Application.csproj.AssemblyReference.cache
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Application/obj/Debug/net9.0/Auction.Application.GeneratedMSBuildEditorConfig.editorconfig
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Application/obj/Debug/net9.0/Auction.Application.AssemblyInfoInputs.cache
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Application/obj/Debug/net9.0/Auction.Application.AssemblyInfo.cs
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Application/obj/Debug/net9.0/Auction.Application.csproj.CoreCompileInputs.cache
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Application/obj/Debug/net9.0/Auction.Application.sourcelink.json
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Application/obj/Debug/net9.0/Auction..5667E242.Up2Date
+/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Application/obj/Debug/net9.0/ref/Auction.Application.dll
