@@ -17,6 +17,7 @@ public class SearchController : ControllerBase {
     {
         var query = DB.PagedSearch<Auction, Auction>();
 
+
         if (!string.IsNullOrEmpty(request.SearchTerm)){
             query.Match(Search.Full, request.SearchTerm).SortByTextScore();
         }
@@ -40,6 +41,7 @@ public class SearchController : ControllerBase {
             _ => query.Match(x => x.AuctionEnd > DateTime.UtcNow)
         };
 
+
         if (!string.IsNullOrEmpty(request.Seller)){
             query.Match(x => x.Seller == request.Seller);
         }
@@ -48,6 +50,7 @@ public class SearchController : ControllerBase {
             query.Match(x => x.Winner == request.Winner);
         }
 
+        query.Sort(x => x.Ascending(a => a.AuctionEnd));
         query.PageNumber(request.PageNumber);
         query.PageSize(request.PageSize);
         var result = await query.ExecuteAsync();

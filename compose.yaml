@@ -107,6 +107,8 @@
         condition: service_healthy
       auction.api:
         condition: service_started
+      gateway:
+        condition: service_started
 
   search.db:
     image: mongo
@@ -144,10 +146,6 @@
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_HTTP_PORTS=8080
     depends_on:
-      auction.api:
-        condition: service_started
-      search.api:
-        condition: service_started
       identity.server:
         condition: service_started
   

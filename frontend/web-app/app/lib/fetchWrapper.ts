@@ -1,9 +1,9 @@
 import { auth } from "@/app/auth"
-const baseUrl = process.env.API_URL;
+const baseUrl = "http://localhost:6001/";
 async function get(url: string) {
     const requestOptions = {
         method: 'GET',
-        headers: await getHeaders()
+        // headers: await getHeaders()
     }
     const response = await fetch(baseUrl + url, requestOptions)
     return handleResponse(response)
@@ -62,7 +62,7 @@ async function getHeaders(): Promise<Headers> {
     const headers = new Headers();
     headers.set('Content-type', 'application/json')
     if (session) {
-        headers.set('Authorization', 'Bearer ' + session.accessToken)
+        headers.set('Authorization', 'Bearer ' + session.user.access_token)
     }
     return headers;
 }

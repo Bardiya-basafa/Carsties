@@ -2,7 +2,7 @@
 import {Dropdown, DropdownDivider, DropdownItem} from "flowbite-react";
 import Link from "next/link";
 import {User} from "next-auth";
-import {useRouter} from "next/router";
+import {useRouter} from "next/navigation";
 import {usePathname} from "next/navigation";
 import {useParamsStore} from "@/hooks/useParamsStore";
 import {AiFillCar, AiFillTrophy, AiOutlineLogout} from "react-icons/ai";

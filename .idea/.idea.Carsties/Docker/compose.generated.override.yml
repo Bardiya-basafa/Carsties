@@ -19,6 +19,24 @@ services:
     - "E:\\Dotnet Projects\\Carsties\\Carsties:/src:rw"
     - "C:\\Users\\Notebook\\.nuget\\packages:/home/app/.nuget/packages"
     working_dir: "/app"
+  gateway:
+    build:
+      context: "E:\\Dotnet Projects\\Carsties\\Carsties"
+      dockerfile: "src/Services/Gateway.Service/Gateway.Server/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net9.0/Gateway.Server.dll"
+    environment:
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "gateway.server:dev"
+    ports: []
+    volumes:
+    - "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Gateway.Service\\Gateway.Server:/app:rw"
+    - "E:\\Dotnet Projects\\Carsties\\Carsties:/src:rw"
+    - "C:\\Users\\Notebook\\.nuget\\packages:/home/app/.nuget/packages"
+    working_dir: "/app"
   identity.server:
     build:
       context: "E:\\Dotnet Projects\\Carsties\\Carsties"
