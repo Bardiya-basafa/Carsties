@@ -4002,6 +4002,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Duende.IdentityModel >= 7.1.0",
       "Duende.IdentityServer.AspNetIdentity >= 7.3.0",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 8.0.11",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 8.0.11",
@@ -4055,6 +4056,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "Duende.IdentityModel": {
+            "target": "Package",
+            "version": "[7.1.0, )"
+          },
           "Duende.IdentityServer.AspNetIdentity": {
             "target": "Package",
             "version": "[7.3.0, )"

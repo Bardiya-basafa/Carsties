@@ -1,6 +1,7 @@
 ﻿namespace Auction.Api.Controllers;
 
 using System.Security.Authentication;
+using System.Security.Claims;
 using Abstractions;
 using Application.Auctions.Cache;
 using Application.Auctions.Commands;
@@ -69,8 +70,14 @@ public class AuctionController : ApiController {
     {
         var command = request.Adapt<CreateAuctionCommand>();
 
-        if (User.Identity is { Name: not null }) command.Seller = User.Identity.Name;
+        var userEmail = User.FindFirst(ClaimTypes.Email)?.Value;
+        
+        if (string.IsNullOrEmpty(userEmail))
+        {
+            return Unauthorized("User email not found in token");
+        }
 
+        command.Seller = userEmail;
         var result = await Sender.Send(command);
         await _publishEndpoint.Publish(result.Value().Auction.Adapt<AuctionCreated>());
         var savingResult = await Sender.Send(new SaveChangesCommand());

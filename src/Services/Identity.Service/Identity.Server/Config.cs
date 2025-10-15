@@ -1,4 +1,5 @@
 using Duende.IdentityServer.Models;
+using Duende.IdentityServer;
 
 
 namespace Identity.Server;
@@ -8,7 +9,7 @@ public static class Config {
     public static IEnumerable<IdentityResource> IdentityResources =>
     [
         new IdentityResources.OpenId(),
-        new IdentityResources.Profile()
+        new IdentityResources.Profile(),
     ];
 
     public static IEnumerable<ApiScope> ApiScopes =>
@@ -32,11 +33,15 @@ public static class Config {
             ClientId = "nextApp",
             ClientName = "nextApp",
             ClientSecrets = { new Secret("secret".Sha256()) },
-            AllowedGrantTypes = GrantTypes.CodeAndClientCredentials,
-            RequirePkce = false,
+            RequirePkce = true,
+            AllowedGrantTypes = GrantTypes.Code,
             RedirectUris = { "http://localhost:3000/api/auth/callback/id-server" },
+            PostLogoutRedirectUris = {"http://localhost:3000"},
             AllowedScopes = { "openid", "profile", "auctionApp" },
+            AllowAccessTokensViaBrowser = true,
             AccessTokenLifetime = 3600 * 24 * 30,
+            AllowOfflineAccess = true,
+            RequireClientSecret = false,
         }
     ];
 

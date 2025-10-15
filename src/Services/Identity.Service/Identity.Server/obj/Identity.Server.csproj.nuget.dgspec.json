@@ -44,6 +44,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Duende.IdentityModel": {
+              "target": "Package",
+              "version": "[7.1.0, )"
+            },
             "Duende.IdentityServer.AspNetIdentity": {
               "target": "Package",
               "version": "[7.3.0, )"

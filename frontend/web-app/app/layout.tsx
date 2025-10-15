@@ -1,8 +1,8 @@
 import type {Metadata} from "next";
-import {SessionProvider} from "next-auth/react";
 import ToasterProvider from "./providers/ToasterProvider";
 import "./globals.css";
 import NavBar from "@/app/navbar/NavBar";
+import AuthSessionProvider from "@/app/providers/SessionProvider";
 
 
 export const metadata: Metadata = {
@@ -18,11 +18,11 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body>
-                <SessionProvider> <ToasterProvider/> <NavBar/>
+                <AuthSessionProvider> <ToasterProvider/> <NavBar/>
                     <main className="container mx-auto px-5 pt-10">
                         {/*<SignalRProvider>*/} {/*    {children}*/} {/*</SignalRProvider>*/} {children}
                     </main>
-                </SessionProvider>
+                </AuthSessionProvider>
             </body>
         </html>
     );

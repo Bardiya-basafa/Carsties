@@ -1,4 +1,4 @@
-import { auth } from "@/app/auth"
+import { auth } from "@/auth"
 const baseUrl = "http://localhost:6001/";
 async function get(url: string) {
     const requestOptions = {

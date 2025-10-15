@@ -40,20 +40,20 @@ services:
   identity.server:
     build:
       context: "E:\\Dotnet Projects\\Carsties\\Carsties"
-      dockerfile: "src/Services/Identity.Service/Identity.Server/Dockerfile"
+      dockerfile: "src/Services/Identity.Service/Identity/Dockerfile"
       target: "base"
     command: []
     entrypoint:
     - "dotnet"
-    - "/app/bin/Debug/net8.0/Identity.Server.dll"
+    - "/app/bin/Debug/net9.0/Identity.dll"
     environment:
-      ASPNETCORE_STATICWEBASSETS: "/app/bin/Debug/net8.0/Identity.Server.staticwebassets.runtime.CT.json"
+      ASPNETCORE_STATICWEBASSETS: "/app/bin/Debug/net9.0/Identity.staticwebassets.runtime.CT.json"
       DOTNET_USE_POLLING_FILE_WATCHER: "true"
-    image: "identity.server:dev"
+    image: "identity:dev"
     ports: []
     volumes:
     - "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Identity.Service\\\
-      Identity.Server:/app:rw"
+      Identity:/app:rw"
     - "E:\\Dotnet Projects\\Carsties\\Carsties:/src:rw"
     - "C:\\Users\\Notebook\\.nuget\\packages:/home/app/.nuget/packages"
     working_dir: "/app"

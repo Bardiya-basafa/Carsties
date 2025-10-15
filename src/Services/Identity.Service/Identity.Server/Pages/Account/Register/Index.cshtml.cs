@@ -50,7 +50,9 @@ public class Index(UserManager<ApplicationUser> userManager) : PageModel {
             await userManager.AddClaimsAsync(user,
             new Claim[]
             {
-                new Claim(JwtClaimTypes.Name, Input.FullName)
+                new Claim("name", Input.FullName),
+                new Claim("username", Input.Email),
+                
             });
 
             RegisterSuccess = true;

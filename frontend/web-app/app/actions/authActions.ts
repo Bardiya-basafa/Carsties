@@ -1,6 +1,6 @@
 'use server'
-import {PagedResult} from "@/types";
-import {auth} from "@/app/auth";
+import {auth} from "@/auth";
+
 
 export async function getCurrentUser() {
     try {

@@ -57,7 +57,7 @@
     container_name: identity.server
     build:
       context: .
-      dockerfile: src/Services/Identity.Service/Identity.Server/Dockerfile
+      dockerfile: src/Services/Identity.Service/Identity/Dockerfile
     ports:
       - "5000:8080"
     environment:
