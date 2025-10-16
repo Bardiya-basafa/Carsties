@@ -9,12 +9,14 @@ import {getCurrentUser} from "@/app/actions/authActions";
 import {getDetailedViewData} from "@/app/actions/auctionActions";
 import {auth} from "@/auth";
 import {redirect} from "next/navigation";
+import toast from "react-hot-toast";
 
 
 export default async function Details({params}: { params: { id: string } }) {
     const session = await auth();
 
     if (!session) {
+        toast.error("Please sign in to continue");
         redirect("/auth/signin");
     }
 
@@ -29,20 +31,20 @@ export default async function Details({params}: { params: { id: string } }) {
         <div>
             <div className="flex justify-between">
                 <div className="flex items-center gap-3">
-                    <Heading title={`${data.make} ${data.model}`}/> {user?.username === data.seller && (<div></div>)}
+                    <Heading title={`${data.make} ${data.model}`}/> {user?.email === data.seller && (<div></div>)}
                 </div>
                 <div className="flex gap-3">
                     <h3 className="text-2xl font-semibold">Time remaining:</h3>
                     <CountDownTimer auctionEnd={data.auctionEnd}/> {isSeller && (
                     <div className="flex gap-2">
-                        <DeleteButton/>
+                        <DeleteButton auctionId={data.id} sellerEmail={data.seller}/>
                     </div>
                 )}
                 </div>
             </div>
             <div className="grid grid-cols-2 gap-6 mt-3">
                 <div className="w-full bg-gray-200 aspect-h-10 aspect-w-16 rounded-lg overflow-hidden">
-                    <CarImage imageUrl={"/carImg.webp"}/>
+                    <CarImage imageUrl={data.imageUrl}/>
                 </div>
                 <BidList user={user} auction={data}/>
             </div>

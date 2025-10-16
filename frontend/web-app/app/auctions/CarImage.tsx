@@ -11,7 +11,7 @@ export default function CarImage(props: Props) {
 
     return (
         <div className="relative h-full w-full">
-            <Image src={"/carImg.webp"} alt="image" fill  priority className={`
+            <Image src={props.imageUrl} alt="image" fill priority className={`
                 object-cover
                 group-hover:opacity-75
                 duration-700
