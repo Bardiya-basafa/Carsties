@@ -1,5 +1,6 @@
 using System.Text;
 using Auction.Api;
+using Auction.Api.Services;
 using Auction.Application;
 using Auction.Application.Auctions.Commands.CreateAuction;
 using Auction.Application.Auctions.Queries.GetAuctions;
@@ -42,7 +43,7 @@ builder.Services.AddMassTransit(x => {
         });
 
 
-        cfg.Host("rabbitmq",
+        cfg.Host(builder.Configuration["RabbitMQ:Host"],
         "/",
         h => {
             h.Username("guest");
@@ -54,15 +55,6 @@ builder.Services.AddMassTransit(x => {
     });
 });
 
-// builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-//     .AddJwtBearer(options =>
-//     {
-//         // options.Authority = builder.Configuration["IdentityServerUrl"];
-//         options.Authority = "http://identity.server:8080";
-//         options.RequireHttpsMetadata = false;
-//         options.TokenValidationParameters.ValidateAudience = false;
-//         options.TokenValidationParameters.NameClaimType = "username";
-//     });
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options => {
@@ -103,6 +95,7 @@ builder.Services.AddMediatR(cfg => {
     cfg.AddBehavior(typeof(IPipelineBehavior<,>), typeof(ValidationPipelineBehavior<,>));
 });
 
+builder.Services.AddGrpc();
 
 var app = builder.ConfigureLogging().Build();
 
@@ -118,6 +111,8 @@ using (var scope = app.Services.CreateScope()){
         logger.LogError(ex, "An error occurred while migrating the database.");
     }
 }
+
+app.MapGrpcService<GrpcAuctionService>();
 
 app.UseAuthentication();
 app.UseAuthorization();

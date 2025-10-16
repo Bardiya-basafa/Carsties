@@ -56,7 +56,7 @@ builder.Services.AddCors(options => {
 builder.Services.AddControllers();
 
 var app = builder.Build();
-// app.UseCors("AllowNextJS");
+app.UseCors("AllowNextJS");
 
 using (var scope = app.Services.CreateScope()){
     var services = scope.ServiceProvider;

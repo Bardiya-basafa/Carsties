@@ -13,11 +13,11 @@ export default function Input(props: Props) {
     return (
         <div className={'mb-2 block'}>
             {props.showLabel && (
-                <div className="mb-2 block">
+                <div className="mb-2 block bg-white">
                     <Label htmlFor={field.name} defaultValue={props.label}/>
                 </div>
             )}
-            <TextInput{...props} {...field} type={props.type || 'text'} placeholder={fieldState.error ? 'failure' : !fieldState.isDirty ? '' : 'success'}/>
+            <TextInput{...props} {...field} type={props.type || 'text'} className={'bg-white !important'} placeholder={fieldState.error ? 'failure' : !fieldState.isDirty ? '' : 'success'}/>
         </div>
     )
 }

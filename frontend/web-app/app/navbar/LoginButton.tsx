@@ -1,10 +1,10 @@
 'use client'
 
 import {Button} from "flowbite-react";
-import {signIn} from "next-auth/react";
+import Link from "next/link";
 
 export default function LoginButton() {
     return (
-        <Button outline onClick={() => signIn('id-server', {callbackUrl: '/'}, {prompt: 'login'})}> Login </Button>
+        <Link href="/auth/signin"> <Button outline> Login </Button> </Link>
     )
 }

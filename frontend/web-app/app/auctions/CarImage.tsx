@@ -10,7 +10,7 @@ export default function CarImage(props: Props) {
     const [isLoading, setIsLoading] = useState(true);
 
     return (
-        <div className="relative h-64 w-full">
+        <div className="relative h-full w-full">
             <Image src={"/carImg.webp"} alt="image" fill  priority className={`
                 object-cover
                 group-hover:opacity-75

@@ -15,7 +15,7 @@ export default function AuctionCard(props: Props) {
         <Link href={`/auctions/details/${props.auction.id}`} className={'group'}>
             <div className="w-full relative bg-gray-200 aspect-w-16 aspect-h-10 rounded-lg overflow-hidden">
                 <div>
-                    <div className="relative w-full h-full">
+                    <div className="relative w-full h-64">
                         <CarImage imageUrl={props.auction.imageUrl}/>
                     </div>
                     <div className="relative inset-0">

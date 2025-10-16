@@ -34,7 +34,7 @@
       </Content>
     </ItemGroup>
     <ItemGroup>
-        <Protobuf Include="protos/auctions.proto" GrpcServices="Server"/>
+        <Protobuf Include=".\protos\auctions.proto" GrpcServices="Server"/>
     </ItemGroup>
 
 </Project>
