@@ -10,7 +10,7 @@
     "postinstall": ""
   },
   "dependencies": {
-    "@microsoft/signalr": "^8.0.7",
+    "@microsoft/signalr": "^8.0.17",
     "@tailwindcss/typography": "^0.5.19",
     "date-fns": "^4.1.0",
     "flowbite-react": "^0.12.9",

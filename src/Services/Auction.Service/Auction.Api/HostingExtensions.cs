@@ -34,6 +34,7 @@ public static class HostingExtensions {
                 }).Enrich.FromLogContext().ReadFrom.Configuration(ctx.Configuration);
             }
         });
+        
 
         return builder;
     }

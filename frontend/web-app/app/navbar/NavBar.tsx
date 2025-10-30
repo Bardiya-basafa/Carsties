@@ -16,7 +16,7 @@ export default function NavBar() {
             <Logo/> <Search/> {session.data?.user ? (
             <div className={"flex items-center gap-4"}>
                 <Link href={"/auctions/create"}> <Button>Create Auction</Button></Link>
-                <UserActions user={session.data.user}/>
+                <UserActions/>
             </div>
         ) : (
             <LoginButton/>

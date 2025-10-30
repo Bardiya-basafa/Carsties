@@ -3,6 +3,7 @@
 
 namespace Bidding.Api.Controllers;
 
+using System.Security.Claims;
 using Entities;
 using Mapster;
 using MassTransit;
@@ -38,9 +39,10 @@ public class BidsController(IPublishEndpoint publishEndpoint, GrpcAuctionClient 
 
         var bid = new Bid()
         {
+            BidTime = DateTime.UtcNow,
+            Bidder = User.FindFirst(ClaimTypes.Email)?.Value!,
             Amount = request.Amount,
             AuctionId = request.AuctionId,
-            Bidder = User.Identity?.Name ?? string.Empty,
         };
 
         if (auction.AuctionEnd < DateTime.UtcNow){
@@ -62,9 +64,11 @@ public class BidsController(IPublishEndpoint publishEndpoint, GrpcAuctionClient 
         }
 
         await DB.SaveAsync(bid);
-        await publishEndpoint.Publish(bid.Adapt<BidPlaced>());
-
-        return Ok(bid);
+        var adaptedBid = bid.Adapt<BidPlaced>();
+        adaptedBid.BidStatus = bid.BidStatus.ToString();
+        adaptedBid.Id = bid.ID;
+        await publishEndpoint.Publish(adaptedBid);
+        return Ok(adaptedBid);
     }
 
     [HttpGet("{auctionId}")]
@@ -75,7 +79,19 @@ public class BidsController(IPublishEndpoint publishEndpoint, GrpcAuctionClient 
             .Sort(b => b.Descending(x => x.BidTime))
             .ExecuteAsync();
 
-        return Ok(bids);
+
+        var newBids = bids.Select(
+        bid => new
+        {
+            id = bid.ID,
+            auctionId = bid.AuctionId,
+            bidTime = bid.BidTime,
+            bidder = bid.Bidder,
+            amount = bid.Amount,
+            bidStatus = bid.BidStatus.ToString(),
+
+        }).ToList();
+        return Ok(newBids);
     }
 
 }

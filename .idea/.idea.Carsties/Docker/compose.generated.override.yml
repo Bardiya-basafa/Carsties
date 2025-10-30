@@ -12,7 +12,7 @@ services:
     environment:
       ASPNETCORE_ENVIRONMENT: "Development"
       DOTNET_USE_POLLING_FILE_WATCHER: "true"
-    image: "auction.api:dev"
+    image: "bardiyabasafa/carsties-auction-api:dev"
     ports: []
     volumes:
     - "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Auction.Service\\Auction.Api:/app:rw"
@@ -30,7 +30,7 @@ services:
     - "/app/bin/Debug/net9.0/Bidding.Api.dll"
     environment:
       DOTNET_USE_POLLING_FILE_WATCHER: "true"
-    image: "bidding.api:dev"
+    image: "bardiyabasafa/carsties-bids-api:dev"
     ports: []
     volumes:
     - "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Bidding.Service\\Bidding.Api:/app:rw"
@@ -48,7 +48,7 @@ services:
     - "/app/bin/Debug/net9.0/Gateway.Server.dll"
     environment:
       DOTNET_USE_POLLING_FILE_WATCHER: "true"
-    image: "gateway.server:dev"
+    image: "bardiyabasafa/carsties-gateway:dev"
     ports: []
     volumes:
     - "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Gateway.Service\\Gateway.Server:/app:rw"
@@ -67,11 +67,31 @@ services:
     environment:
       ASPNETCORE_STATICWEBASSETS: "/app/bin/Debug/net9.0/Identity.staticwebassets.runtime.CT.json"
       DOTNET_USE_POLLING_FILE_WATCHER: "true"
-    image: "identity:dev"
+    image: "bardiyabasafa/carsties-identity-server:dev"
     ports: []
     volumes:
     - "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Identity.Service\\\
       Identity:/app:rw"
+    - "E:\\Dotnet Projects\\Carsties\\Carsties:/src:rw"
+    - "C:\\Users\\Notebook\\.nuget\\packages:/home/app/.nuget/packages"
+    working_dir: "/app"
+  notification.hub:
+    build:
+      context: "E:\\Dotnet Projects\\Carsties\\Carsties"
+      dockerfile: "src/Services/Notification.Service/Notification.Service/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net9.0/Notification.Service.dll"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "bardiyabasafa/carsties-notification-hub:dev"
+    ports: []
+    volumes:
+    - "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Notification.Service\\\
+      Notification.Service:/app:rw"
     - "E:\\Dotnet Projects\\Carsties\\Carsties:/src:rw"
     - "C:\\Users\\Notebook\\.nuget\\packages:/home/app/.nuget/packages"
     working_dir: "/app"
@@ -86,7 +106,7 @@ services:
     - "/app/bin/Debug/net9.0/Search.Api.dll"
     environment:
       DOTNET_USE_POLLING_FILE_WATCHER: "true"
-    image: "search.api:dev"
+    image: "bardiyabasafa/carsties-search-api:dev"
     ports: []
     volumes:
     - "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Search.Service\\Search.Api:/app:rw"

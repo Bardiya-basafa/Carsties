@@ -1,9 +1,8 @@
-﻿// app/auth/signin/page.tsx
-'use client';
+﻿'use client';
 
 import { signIn } from "next-auth/react";
 import { useRouter, useSearchParams } from "next/navigation";
-import { useState } from "react";
+import {useEffect, useState} from "react";
 import Link from "next/link";
 
 export default function SignIn() {
@@ -11,9 +10,17 @@ export default function SignIn() {
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
     const [isLoading, setIsLoading] = useState(false);
+    const [callbackUrl, setCallbackUrl] = useState("/dashboard");
     const router = useRouter();
-    const searchParams = useSearchParams();
-    const callbackUrl = searchParams.get("callbackUrl") || "/dashboard";
+
+    useEffect(() => {
+        // Get search params from current URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const callbackUrlParam = urlParams.get("callbackUrl");
+        if (callbackUrlParam) {
+            setCallbackUrl(callbackUrlParam);
+        }
+    }, []);
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();

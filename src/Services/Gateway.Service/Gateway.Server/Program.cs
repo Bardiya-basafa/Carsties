@@ -18,7 +18,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidIssuer = builder.Configuration["Jwt:Issuer"],
             ValidAudience = builder.Configuration["Jwt:Audience"],
             IssuerSigningKey = new SymmetricSecurityKey(
-            Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+            Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]!))
         };
 
         options.Events = new JwtBearerEvents
@@ -38,7 +38,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 builder.Services.AddCors(options => {
     options.AddPolicy("AllowNextJS",
     policy => {
-        policy.WithOrigins("http://localhost:3000")
+        policy.WithOrigins("https://app.carsties.local")
             .AllowAnyHeader()
             .AllowAnyMethod()
             .AllowCredentials();
@@ -47,7 +47,9 @@ builder.Services.AddCors(options => {
 
 var app = builder.Build();
 app.UseCors("AllowNextJS");
+app.UseWebSockets();
 app.MapReverseProxy();
+
 
 app.UseAuthentication();
 app.UseAuthorization();

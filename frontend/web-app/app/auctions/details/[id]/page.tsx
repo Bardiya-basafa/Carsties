@@ -10,19 +10,20 @@ import {getDetailedViewData} from "@/app/actions/auctionActions";
 import {auth} from "@/auth";
 import {redirect} from "next/navigation";
 import toast from "react-hot-toast";
+import {useSession} from "next-auth/react";
 
 
-export default async function Details({params}: { params: { id: string } }) {
-    const session = await auth();
+export default async function Details({params}: { params: Promise<{ id: string }> }) {
+    const session = await auth()
 
     if (!session) {
         toast.error("Please sign in to continue");
         redirect("/auth/signin");
     }
+    const awaitedParams = await params;
 
-    console.log('page auction id : ' + params.id);
-    const data = await getDetailedViewData(params.id);
-    console.log("data from first page " + JSON.stringify(data));
+
+    const data = await getDetailedViewData(awaitedParams.id);
     const user = await getCurrentUser();
     const isSeller = user?.email === data.seller;
 
@@ -49,6 +50,7 @@ export default async function Details({params}: { params: { id: string } }) {
                 <BidList user={user} auction={data}/>
             </div>
             <div className="mt-3 grid grid-cols-1 rounded-lg">
+                <time dateTime="2016-10-25" suppressHydrationWarning />
                 <DetailedSpecs auction={data}/>
             </div>
         </div>

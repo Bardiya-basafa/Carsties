@@ -1,13 +1,15 @@
 ﻿import NextAuth from "next-auth";
 import Credentials from "next-auth/providers/credentials";
 
-export const {handlers, auth, signIn, signOut} = NextAuth({
+export const { handlers, auth, signIn, signOut } = NextAuth({
+    trustHost: true,
+    secret: process.env.AUTH_SECRET,
     providers: [
         Credentials({
             name: "credentials",
             credentials: {
-                email: {label: "Email", type: "email"},
-                password: {label: "Password", type: "password"},
+                email: { label: "Email", type: "email" },
+                password: { label: "Password", type: "password" },
             },
             async authorize(credentials) {
                 try {
@@ -15,7 +17,7 @@ export const {handlers, auth, signIn, signOut} = NextAuth({
                         throw new Error("Email and password are required");
                     }
 
-                    const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/auth/login`, {
+                    const response = await fetch(`${process.env.NEXT_PUBLIC_GATEWAY_BASE_URL}/auth/login`, {
                         method: "POST",
                         headers: {
                             "Content-Type": "application/json",
@@ -27,7 +29,6 @@ export const {handlers, auth, signIn, signOut} = NextAuth({
                     });
 
                     if (!response.ok) {
-                        // Handle different error statuses
                         if (response.status === 401) {
                             throw new Error("Invalid email or password");
                         } else if (response.status === 400) {
@@ -40,10 +41,7 @@ export const {handlers, auth, signIn, signOut} = NextAuth({
 
                     const data = await response.json();
 
-                    // Log the response for debugging
-                    console.log("Login API Response:", data);
 
-                    // Return the user object that will be stored in the token
                     return {
                         id: data.user?.id || data.id,
                         email: data.user?.email || data.email,
@@ -54,25 +52,32 @@ export const {handlers, auth, signIn, signOut} = NextAuth({
                 } catch (error) {
                     console.error("Authorization error:", error);
 
-                    // Return null to indicate authentication failure
-                    // NextAuth will handle displaying the error
+
                     return null;
                 }
             },
         })
     ],
     callbacks: {
-        async jwt({token, user}) {
+        async jwt({ token, user }) {
             if (user) {
                 token.accessToken = user.accessToken;
                 token.id = user.id;
             }
             return token;
         },
-        async session({token, session}) {
-            session.accessToken = token.accessToken;
+        async session({ token, session }) {
+            session.accessToken = token.accessToken as string;
             session.user.id = token.id as string;
             return session;
+        },
+        async redirect({ url, baseUrl }) {
+            const base = 'https://app.carsties.local';
+
+            if (url.startsWith("/")) return `${base}${url}`;
+            else if (new URL(url).origin === base) return url;
+
+            return base;
         }
     },
     pages: {

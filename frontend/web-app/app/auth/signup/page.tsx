@@ -1,5 +1,4 @@
-﻿// app/auth/signup/page.tsx
-'use client';
+﻿'use client';
 
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
@@ -37,7 +36,7 @@ export default function SignUp() {
         }
 
         try {
-            const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/auth/register`, {
+            const response = await fetch("https://api.carsties.local/auth/register", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

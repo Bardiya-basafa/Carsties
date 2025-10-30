@@ -46,17 +46,28 @@ export default function BidForm({highBid, auctionId}: Props) {
         formData.auctionId = auctionId;
         if (formData.amount <= highBid) {
 
+            setIsSubmitting(false)
             return toast.error('Bid must be at least $' + numberWithCommas(highBid + 1));
         }
 
 
-        // Your submission logic here
-        placeBidForAuction(formData).then(result => {
-            if (result.error) throw result.error;
-            // addBid(result);
-            reset();
-        }).catch(err => toast.error(err.message));
-        setIsSubmitting(false)
+        try {
+            const result = await placeBidForAuction(formData)
+
+            if (result.error) {
+                throw result.error;
+            }
+
+
+
+            // Optional: Show success message
+            toast.success('Bid placed successfully!');
+
+        } catch (err: any) {
+            toast.error(err.message || 'Failed to place bid')
+        } finally {
+            setIsSubmitting(false)
+        }
     }
 
     const handleCancel = () => {
