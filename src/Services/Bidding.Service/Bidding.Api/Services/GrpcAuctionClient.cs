@@ -10,7 +10,7 @@ public class GrpcAuctionClient(IConfiguration config, ILogger<GrpcAuctionClient>
     public Auction? GetAuction(string id)
     {
         logger.LogInformation($"Getting auction with id: {id}");
-        var channel = GrpcChannel.ForAddress(config["GrpcAuction"]!);
+        var channel = GrpcChannel.ForAddress("http://auction.api:8081");
         var client = new GrpcAuction.GrpcAuctionClient(channel);
         var request = new GetAuctionRequest() { Id = id };
 

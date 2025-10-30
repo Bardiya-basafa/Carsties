@@ -1,36 +1,74 @@
-﻿import {Auction} from "@/types";
-import {Table} from 'flowbite-react/dist/components/Table/Table';
+﻿'use client'
+import {Auction} from "@/types";
+import {Table, TableBody, TableCell, TableRow} from "flowbite-react";
+import {useEffect, useState} from "react";
 
 type Props = {
     auction: Auction
 }
+
+
 export default function DetailedSpecs({auction}: Props) {
+
+
+    const [isClient, setIsClient] = useState(false)
+
+    useEffect(() => {
+        setIsClient(true)
+    }, [])
     return (
-        <Table striped={true}> <Table.Body className="divide-y">
-            <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
-                <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white"> Seller </Table.Cell>
-                <Table.Cell>
-                    {auction.seller}
-                </Table.Cell> </Table.Row> <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
-            <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white"> Make </Table.Cell>
-            <Table.Cell>
-                {auction.make}
-            </Table.Cell> </Table.Row> <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
-            <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white"> Model </Table.Cell>
-            <Table.Cell>
-                {auction.model}
-            </Table.Cell> </Table.Row> <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
-            <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white"> Year manufactured </Table.Cell>
-            <Table.Cell>
-                {auction.year}
-            </Table.Cell> </Table.Row> <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
-            <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white"> Mileage </Table.Cell>
-            <Table.Cell>
-                {auction.mileage}
-            </Table.Cell> </Table.Row> <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
-            <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white"> Has reserve price? </Table.Cell>
-            <Table.Cell>
-                {auction.reservePrice > 0 ? 'Yes' : 'No'}
-            </Table.Cell> </Table.Row> </Table.Body> </Table>
+
+        <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+            <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
+                <tr className="bg-white dark:bg-gray-800">
+                    <td className="px-6 py-4 whitespace-nowrap font-medium text-gray-900 dark:text-white">
+                        Seller
+                    </td>
+                    <td className="px-6 py-4">
+                        {auction.seller}
+                    </td>
+                </tr>
+                <tr className="bg-white dark:bg-gray-800">
+                    <td className="px-6 py-4 whitespace-nowrap font-medium text-gray-900 dark:text-white">
+                        Make
+                    </td>
+                    <td className="px-6 py-4">
+                        {auction.make}
+                    </td>
+                </tr>
+                <tr className="bg-white dark:bg-gray-800">
+                    <td className="px-6 py-4 whitespace-nowrap font-medium text-gray-900 dark:text-white">
+                        Model
+                    </td>
+                    <td className="px-6 py-4">
+                        {auction.model}
+                    </td>
+                </tr>
+                <tr className="bg-white dark:bg-gray-800">
+                    <td className="px-6 py-4 whitespace-nowrap font-medium text-gray-900 dark:text-white">
+                        Year manufactured
+                    </td>
+                    <td className="px-6 py-4">
+                        {auction.year}
+                    </td>
+                </tr>
+                <tr className="bg-white dark:bg-gray-800">
+                    <td className="px-6 py-4 whitespace-nowrap font-medium text-gray-900 dark:text-white">
+                        Mileage
+                    </td>
+                    <td className="px-6 py-4">
+                        {auction.mileage}
+                    </td>
+                </tr>
+                <tr className="bg-white dark:bg-gray-800">
+                    <td className="px-6 py-4 whitespace-nowrap font-medium text-gray-900 dark:text-white">
+                        Has reserve price?
+                    </td>
+                    <td className="px-6 py-4">
+                        {auction.reservePrice > 0 ? 'Yes' : 'No'}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     );
 }

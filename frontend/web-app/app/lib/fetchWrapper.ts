@@ -1,13 +1,18 @@
-import { auth } from "@/app/auth"
-const baseUrl = process.env.API_URL;
+import {auth} from "@/auth"
+
+const baseUrl = `${process.env.NEXT_PUBLIC_GATEWAY_BASE_URL}/`;
+
 async function get(url: string) {
+
+    const headers = await getHeaders();
     const requestOptions = {
         method: 'GET',
-        headers: await getHeaders()
+        headers: headers,
     }
     const response = await fetch(baseUrl + url, requestOptions)
     return handleResponse(response)
 }
+
 async function put(url: string, body: unknown) {
     const requestOptions = {
         method: 'PUT',
@@ -17,12 +22,14 @@ async function put(url: string, body: unknown) {
     const response = await fetch(baseUrl + url, requestOptions)
     return handleResponse(response)
 }
+
 async function post(url: string, body: unknown) {
     const requestOptions = {
         method: 'POST',
         headers: await getHeaders(),
         body: JSON.stringify(body)
     }
+    console.log("this is post request" + baseUrl + url)
     const response = await fetch(baseUrl + url, requestOptions)
     return handleResponse(response)
 }
@@ -36,36 +43,40 @@ async function del(url: string) {
     const response = await fetch(baseUrl + url, requestOptions)
     return handleResponse(response)
 }
+
 async function handleResponse(response: Response) {
     const text = await response.text();
     let data;
     try {
         data = text ? JSON.parse(text) : null
-    }
-    catch {
+    } catch {
         data = text
     }
     if (response.ok) {
         return data || response.statusText
-    }
-    else {
+    } else {
         const error = {
             status: response.status,
             message: typeof data === 'string' ? data : response.statusText
         }
-        return { error }
+        return {error}
     }
 }
 
-async function getHeaders(): Promise<Headers> {
+async function getHeaders() {
     const session = await auth();
-    const headers = new Headers();
-    headers.set('Content-type', 'application/json')
-    if (session) {
-        headers.set('Authorization', 'Bearer ' + session.accessToken)
+
+    const headers: Record<string, string> = {
+        "Content-Type": "application/json",
+    };
+
+    // Add authorization header if user is authenticated
+    if (session?.accessToken) {
+        headers["Authorization"] = `Bearer ${session.accessToken}`;
     }
     return headers;
 }
+
 export const fetchWrapper = {
     get,
     post,

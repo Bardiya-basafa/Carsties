@@ -1,37 +1,36 @@
 {
   "format": 1,
   "restore": {
-    "/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Application/Auction.Application.csproj": {}
+    "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Auction.Service\\Auction.Application\\Auction.Application.csproj": {}
   },
   "projects": {
-    "/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Application/Auction.Application.csproj": {
+    "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Auction.Service\\Auction.Application\\Auction.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Application/Auction.Application.csproj",
+        "projectUniqueName": "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Auction.Service\\Auction.Application\\Auction.Application.csproj",
         "projectName": "Auction.Application",
-        "projectPath": "/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Application/Auction.Application.csproj",
-        "packagesPath": "/home/bardiya/.nuget/packages/",
-        "outputPath": "/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Application/obj/",
+        "projectPath": "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Auction.Service\\Auction.Application\\Auction.Application.csproj",
+        "packagesPath": "C:\\Users\\Notebook\\.nuget\\packages\\",
+        "outputPath": "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Auction.Service\\Auction.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/bardiya/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Notebook\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Domain/Auction.Domain.csproj": {
-                "projectPath": "/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Domain/Auction.Domain.csproj"
+              "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Auction.Service\\Auction.Domain\\Auction.Domain.csproj": {
+                "projectPath": "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Auction.Service\\Auction.Domain\\Auction.Domain.csproj"
               },
-              "/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Shared/Shared/Shared.csproj": {
-                "projectPath": "/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Shared/Shared/Shared.csproj"
+              "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Shared\\Shared\\Shared.csproj": {
+                "projectPath": "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Shared\\Shared\\Shared.csproj"
               }
             }
           }
@@ -46,7 +45,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -89,27 +88,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.110/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Domain/Auction.Domain.csproj": {
+    "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Auction.Service\\Auction.Domain\\Auction.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Domain/Auction.Domain.csproj",
+        "projectUniqueName": "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Auction.Service\\Auction.Domain\\Auction.Domain.csproj",
         "projectName": "Auction.Domain",
-        "projectPath": "/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Domain/Auction.Domain.csproj",
-        "packagesPath": "/home/bardiya/.nuget/packages/",
-        "outputPath": "/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Services/Auction.Service/Auction.Domain/obj/",
+        "projectPath": "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Auction.Service\\Auction.Domain\\Auction.Domain.csproj",
+        "packagesPath": "C:\\Users\\Notebook\\.nuget\\packages\\",
+        "outputPath": "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Auction.Service\\Auction.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/bardiya/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Notebook\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -128,7 +126,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -149,27 +147,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.110/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Shared/Shared/Shared.csproj": {
+    "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Shared\\Shared\\Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Shared/Shared/Shared.csproj",
+        "projectUniqueName": "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Shared\\Shared\\Shared.csproj",
         "projectName": "Shared",
-        "projectPath": "/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Shared/Shared/Shared.csproj",
-        "packagesPath": "/home/bardiya/.nuget/packages/",
-        "outputPath": "/media/bardiya/drive E/Dotnet Projects/Carsties/Carsties/src/Shared/Shared/obj/",
+        "projectPath": "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Shared\\Shared\\Shared.csproj",
+        "packagesPath": "C:\\Users\\Notebook\\.nuget\\packages\\",
+        "outputPath": "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Shared\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/bardiya/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Notebook\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -188,7 +185,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -247,7 +244,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.110/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

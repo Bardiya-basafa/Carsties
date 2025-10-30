@@ -1187,7 +1187,14 @@
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
-      "System.Text.Json/9.0.9": {},
+      "System.Text.Json/9.0.9": {
+        "runtime": {
+          "lib/net9.0/System.Text.Json.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.925.41916"
+          }
+        }
+      },
       "System.Threading.Channels/7.0.0": {},
       "System.Threading.RateLimiting/8.0.0": {},
       "Yarp.ReverseProxy/2.3.0": {
@@ -1213,7 +1220,7 @@
         },
         "runtime": {
           "Auction.Application.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -1221,7 +1228,7 @@
       "Auction.Domain/1.0.0": {
         "runtime": {
           "Auction.Domain.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -1236,7 +1243,7 @@
         },
         "runtime": {
           "Auction.infrastructure.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -1255,7 +1262,7 @@
         },
         "runtime": {
           "Shared.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }

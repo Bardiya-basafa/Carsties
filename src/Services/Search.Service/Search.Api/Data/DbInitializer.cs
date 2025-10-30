@@ -28,7 +28,7 @@ public class DbInitializer {
 
     public async Task InitializeDb(WebApplication application, IConfiguration configuration)
     {
-        await DB.InitAsync("SearchDb", MongoClientSettings.FromConnectionString(configuration.GetConnectionString("MongoDb")));
+        await DB.InitAsync("SearchDb", MongoClientSettings.FromConnectionString(configuration.GetConnectionString("MongoDb") ?? "mongodb://root:mongo@search.db:27017/searchdb?authSource=admin"));
 
         await DB.Index<Auction>()
             .Key(x => x.Make, KeyType.Text)

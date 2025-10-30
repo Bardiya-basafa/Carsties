@@ -1,6 +1,7 @@
 ﻿services:
   auction.api:
     container_name: auction.api
+    image: bardiyabasafa/carsties-auction-api
     build:
       context: .
       dockerfile: src/Services/Auction.Service/Auction.Api/Dockerfile
@@ -17,6 +18,10 @@
       - RabbitMq__Port=5672
       - RabbitMq__Username=guest
       - RabbitMq__Password=guest
+      - Jwt__Key=your-super-secret-key-at-least-32-characters-long
+      - Jwt__Issuer=https://app.carsties.local
+      - Jwt__Audience=https://app.carsties.local
+      - Jwt__ExpireHours=350
     depends_on:
       rabbitmq:
         condition: service_healthy
@@ -24,6 +29,7 @@
         condition: service_healthy
       auction.cache:
         condition: service_healthy
+    
   
   auction.db:
     image: postgres
@@ -55,39 +61,26 @@
   
   identity.server:
     container_name: identity.server
+    image: bardiyabasafa/carsties-identity-server
     build:
       context: .
-      dockerfile: src/Services/Identity.Service/Identity.Server/Dockerfile
+      dockerfile: src/Services/Identity.Service/Identity/Dockerfile
     ports:
       - "5000:8080"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
+      - Jwt__Issuer=https://app.carsties.local
+      - Jwt__Audience=https://app.carsties.local
     depends_on:
-      identity.db:
+      auction.db:
         condition: service_healthy
   
-  identity.db:
-    image: postgres
-    container_name: identity.db
-    ports:
-      - "5433:5432"
-    environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
-      - POSTGRES_DB=identity
-    volumes:
-      - postgres_identity_db:/var/lib/postgresql/data
-    healthcheck:
-      test: [ "CMD-SHELL", "pg_isready -U postgres" ]
-      interval: 3s
-      timeout: 3s
-      retries: 5
-
 
   search.api:
     container_name: search.api
+    image: bardiyabasafa/carsties-search-api
     build:
       context: .
       dockerfile: src/Services/Search.Service/Search.Api/Dockerfile
@@ -100,6 +93,8 @@
       - RabbitMq__Port=5672
       - RabbitMq__Username=guest
       - RabbitMq__Password=guest
+      - Jwt__Issuer=https://app.carsties.local
+      - Jwt__Audience=https://app.carsties.local
     depends_on:
       rabbitmq:
         condition: service_healthy
@@ -107,7 +102,8 @@
         condition: service_healthy
       auction.api:
         condition: service_started
-
+  
+  
   search.db:
     image: mongo
     container_name: search.db
@@ -133,8 +129,41 @@
       timeout: 3s
       retries: 5
   
+  bids.api:
+    container_name: bids.api
+    image: bardiyabasafa/carsties-bids-api
+    build:
+      context: .
+      dockerfile: src/Services/Bidding.Service/Bidding.Api/Dockerfile
+    ports:
+      - "7003:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=8080
+      - Jwt__Issuer=https://app.carsties.local
+      - Jwt__Audience=https://app.carsties.local
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+      search.db:
+        condition: service_healthy
+        
+  notification.hub:
+    container_name: notification.hub
+    image: bardiyabasafa/carsties-notification-hub
+    build:
+      context: .
+      dockerfile: src/Services/Notification.Service/Notification.Service/Dockerfile
+    ports:
+      - "7004:8080"
+    depends_on:
+      rabbitmq:
+        condition: service_healthy    
+        
+  
   gateway:
     container_name: gateway
+    image: bardiyabasafa/carsties-gateway
     build:
       context: .
       dockerfile: src/Services/Gateway.Service/Gateway.Server/Dockerfile
@@ -143,12 +172,14 @@
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_HTTP_PORTS=8080
+      - VIRTUAL_HOST=api.carsties.local
+      - VIRTUAL_PORT=8080
+      - Jwt__Issuer=https://app.carsties.local
+      - Jwt__Audience=https://app.carsties.local
     depends_on:
-      auction.api:
-        condition: service_started
-      search.api:
-        condition: service_started
       identity.server:
+        condition: service_started
+      nginx-proxy:
         condition: service_started
   
   
@@ -163,8 +194,40 @@
       interval: 3s
       timeout: 3s
       retries: 5
+  
+  webapp:
+    container_name: webapp
+    image: bardiyabasafa/carsties-webapp
+    build:
+      context: .
+      dockerfile: frontend/web-app/Dockerfile
+    env_file:
+      - frontend/web-app/.env
+    ports:
+      - "3000:3000"
+    environment:
+      - VIRTUAL_HOST=app.carsties.local
+      - VIRTUAL_PORT=3000
+      # - NEXT_PUBLIC_API_BASE_URL=https://api.carsties.local
+      # - NEXT_PUBLIC_GATEWAY_BASE_URL=http://gateway:8080
+    volumes:
+      - ./frontend/web-app/public/uploads:/app/public/uploads:rw
+    depends_on:
+      notification.hub:
+        condition: service_started
+  
+  nginx-proxy:
+    image: nginxproxy/nginx-proxy
+    container_name: nginx-proxy
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+      - ./devcerts:/etc/nginx/certs
 
 volumes:
   postgres_auction_db:
   postgres_identity_db:
   mongo_search_db:
+  upload_images:

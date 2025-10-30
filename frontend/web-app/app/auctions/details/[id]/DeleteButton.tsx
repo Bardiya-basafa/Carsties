@@ -1,28 +1,37 @@
-﻿import {useState} from "react";
-import {useRouter} from "next/router";
-import toast from "react-hot-toast";
+﻿'use client'
 import {Button} from "flowbite-react";
-import { deleteAuction } from "@/app/actions/auctionActions";
+import {useSession} from "next-auth/react";
+import toast from "react-hot-toast";
+import {useEffect} from "react";
+import {deleteAuction} from "@/app/actions/auctionActions";
+import {useRouter} from "next/navigation";
 
 type Props = {
-    id: string
+    auctionId: string;
+    sellerEmail: string;
 }
-export default function DeleteButton({id}: Props) {
-    const [loading, setLoading] = useState(false);
+export default function DeleteButton({auctionId, sellerEmail}: Props) {
+
+    const session = useSession();
     const router = useRouter();
 
-    function doDelete() {
-        setLoading(true);
-        deleteAuction(id)
-            .then(res => {
-                if (res.error) throw res.error;
-                router.push('/');
-            }).catch(error => {
-            toast.error(error.status + ' ' + error.message)
-        }).finally(() => setLoading(false))
+    async function handleClick() {
+        if (session.data?.user?.email !== sellerEmail) {
+            toast.error("You don't have permission to delete this user!");
+        }
+        const res = await deleteAuction(auctionId);
+        if (res) {
+            toast.success("Auction has been deleted!");
+            router.push("/");
+            return;
+
+        }
+        toast.error("Cant delete auction");
+        router.refresh();
+
     }
 
     return (
-        <Button color="failure" isProcessing={loading} onClick={doDelete}> Delete Auction </Button>
+        <Button onClick={handleClick}> Delete Auction </Button>
     )
 }

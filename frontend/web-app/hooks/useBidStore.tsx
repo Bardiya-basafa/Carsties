@@ -21,9 +21,18 @@ export const useBidStore = create<State & Actions>((set) => ({
         }))
     },
     addBid: (bid: Bid) => {
-        set((state) => ({
-            bids: !state.bids.find(x => x.id === bid.id) ? [bid, ...state.bids] : [...state.bids]
-        }))
+        set((state) => {
+            // Check if bid already exists
+            const bidExists = state.bids.find(x => x.id === bid.id);
+            if (bidExists) {
+                console.log("Bid already exists:", bid.id);
+                return { bids: state.bids }; // Return unchanged
+            }
+
+            console.log("Adding new bid to store:", bid.id, bid.amount);
+            // Add new bid to the beginning of the array
+            return { bids: [bid, ...state.bids] };
+        })
     },
     setOpen: (value: boolean) => {
         set(() => ({

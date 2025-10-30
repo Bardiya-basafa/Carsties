@@ -1,4 +1,6 @@
+using System.Text;
 using Auction.Api;
+using Auction.Api.Services;
 using Auction.Application;
 using Auction.Application.Auctions.Commands.CreateAuction;
 using Auction.Application.Auctions.Queries.GetAuctions;
@@ -10,6 +12,7 @@ using MassTransit;
 using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Npgsql;
 using Polly;
 using Shared.Behaviors;
@@ -23,10 +26,8 @@ builder.Services.AddApplication();
 builder.Services.AddHealthChecks();
 
 
-builder.Services.AddMassTransit(x =>
-{
-    x.AddEntityFrameworkOutbox<AppDbContext>(o =>
-    {
+builder.Services.AddMassTransit(x => {
+    x.AddEntityFrameworkOutbox<AppDbContext>(o => {
         o.QueryDelay = TimeSpan.FromSeconds(10);
         o.UsePostgres();
         o.UseBusOutbox();
@@ -35,66 +36,83 @@ builder.Services.AddMassTransit(x =>
     x.AddConsumersFromNamespaceContaining<AuctionCreatedFaultConsumer>();
     x.SetEndpointNameFormatter(new KebabCaseEndpointNameFormatter("auction", false));
 
-    x.UsingRabbitMq((context, cfg) =>
-    {
-        cfg.UseRetry(r =>
-        {
+    x.UsingRabbitMq((context, cfg) => {
+        cfg.UseRetry(r => {
             r.Handle<RabbitMqConnectionException>();
             r.Interval(5, TimeSpan.FromSeconds(10));
         });
 
 
-        cfg.Host("rabbitmq",
-            "/",
-            h =>
-            {
-                h.Username("guest");
-                h.Password("guest");
-            });
+        cfg.Host(builder.Configuration["RabbitMQ:Host"],
+        "/",
+        h => {
+            h.Username("guest");
+            h.Password("guest");
+        });
 
 
         cfg.ConfigureEndpoints(context);
     });
 });
 
+
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-    .AddJwtBearer(options =>
-    {
-        options.Authority = builder.Configuration["IdentityServiceUrl"];
-        options.RequireHttpsMetadata = false;
-        options.TokenValidationParameters.ValidateAudience = false;
-        options.TokenValidationParameters.NameClaimType = "username";
+    .AddJwtBearer(options => {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = builder.Configuration["Jwt:Issuer"],
+            ValidAudience = builder.Configuration["Jwt:Audience"],
+            IssuerSigningKey = new SymmetricSecurityKey(
+            Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]!))
+        };
+
+        options.Events = new JwtBearerEvents
+        {
+            OnMessageReceived = context => {
+                // You can extract token from query string, cookies, etc.
+                if (context.Request.Query.ContainsKey("access_token")){
+                    context.Token = context.Request.Query["access_token"];
+                }
+
+                return Task.CompletedTask;
+            }
+        };
     });
+
+builder.Services.AddAuthorization();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 
-builder.Services.AddMediatR(cfg =>
-{
+builder.Services.AddMediatR(cfg => {
     cfg.RegisterServicesFromAssembly(typeof(Program).Assembly);
     cfg.RegisterServicesFromAssemblyContaining<GetAuctionsQueryHandler>();
     cfg.AddBehavior(typeof(IPipelineBehavior<,>), typeof(ValidationPipelineBehavior<,>));
 });
 
+builder.Services.AddGrpc();
 
 var app = builder.ConfigureLogging().Build();
 
-using (var scope = app.Services.CreateScope())
-{
+using (var scope = app.Services.CreateScope()){
     var services = scope.ServiceProvider;
 
-    try
-    {
+    try{
         var context = services.GetRequiredService<AppDbContext>();
         await context.Database.MigrateAsync();
     }
-    catch (Exception ex)
-    {
+    catch (Exception ex){
         var logger = services.GetRequiredService<ILogger<Program>>();
         logger.LogError(ex, "An error occurred while migrating the database.");
     }
 }
+
+app.MapGrpcService<GrpcAuctionService>();
 
 app.UseAuthentication();
 app.UseAuthorization();
@@ -103,8 +121,7 @@ app.MapHealthChecks("/health");
 
 app.UseSwagger();
 
-app.UseSwaggerUI(c =>
-{
+app.UseSwaggerUI(c => {
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
     c.RoutePrefix = string.Empty;
 });
