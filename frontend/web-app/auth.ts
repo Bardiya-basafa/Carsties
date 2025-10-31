@@ -18,6 +18,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
                     }
 
                     const response = await fetch(`${process.env.NEXT_PUBLIC_GATEWAY_BASE_URL}/auth/login`, {
+                    // const response = await fetch(`http://localhost:6001/auth/login`, {
                         method: "POST",
                         headers: {
                             "Content-Type": "application/json",

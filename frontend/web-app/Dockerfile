@@ -6,7 +6,7 @@ WORKDIR /app
 # Install dependencies (with build tools for native packages)
 
 COPY frontend/web-app/package*.json ./
-RUN npm ci
+RUN npm ci --only=production
 
 COPY frontend/web-app/. .
 RUN npm run build
@@ -15,7 +15,6 @@ RUN npm run build
 FROM node:20-alpine AS runner
 
 WORKDIR /app
-ENV NEXT_TELEMETRY_DISABLED=1
 
 ENV NODE_ENV=production
 

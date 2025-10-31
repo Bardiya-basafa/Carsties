@@ -31,6 +31,7 @@ const SignalRProvider = ({children}: Props) => {
     useEffect(() => {
         const newConnection = new HubConnectionBuilder()
             .withUrl(`https://api.carsties.local/notification`)
+            // .withUrl(`http://localhost:6001/notification`)
             .withAutomaticReconnect()
             .build()
         setConnection(newConnection);

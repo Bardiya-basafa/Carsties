@@ -1,6 +1,7 @@
 import {auth} from "@/auth"
 
 const baseUrl = `${process.env.NEXT_PUBLIC_GATEWAY_BASE_URL}/`;
+// const baseUrl = `http://localhost:6001/`;
 
 async function get(url: string) {
 
