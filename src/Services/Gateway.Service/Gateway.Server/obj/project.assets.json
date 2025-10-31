@@ -2194,11 +2194,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Gateway.Service\\Gateway.Server\\Gateway.Server.csproj",
+      "projectUniqueName": "E:\\Dotnet Projects\\Carsties-Project\\Carsties\\src\\Services\\Gateway.Service\\Gateway.Server\\Gateway.Server.csproj",
       "projectName": "Gateway.Server",
-      "projectPath": "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Gateway.Service\\Gateway.Server\\Gateway.Server.csproj",
+      "projectPath": "E:\\Dotnet Projects\\Carsties-Project\\Carsties\\src\\Services\\Gateway.Service\\Gateway.Server\\Gateway.Server.csproj",
       "packagesPath": "C:\\Users\\Notebook\\.nuget\\packages\\",
-      "outputPath": "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Gateway.Service\\Gateway.Server\\obj\\",
+      "outputPath": "E:\\Dotnet Projects\\Carsties-Project\\Carsties\\src\\Services\\Gateway.Service\\Gateway.Server\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Notebook\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -2213,8 +2213,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Shared\\Shared\\Shared.csproj": {
-              "projectPath": "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Shared\\Shared\\Shared.csproj"
+            "E:\\Dotnet Projects\\Carsties-Project\\Carsties\\src\\Shared\\Shared\\Shared.csproj": {
+              "projectPath": "E:\\Dotnet Projects\\Carsties-Project\\Carsties\\src\\Shared\\Shared\\Shared.csproj"
             }
           }
         }

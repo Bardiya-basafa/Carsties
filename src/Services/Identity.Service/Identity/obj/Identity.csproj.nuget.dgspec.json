@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Identity.Service\\Identity\\Identity.csproj": {}
+    "E:\\Dotnet Projects\\Carsties-Project\\Carsties\\src\\Services\\Identity.Service\\Identity\\Identity.csproj": {}
   },
   "projects": {
-    "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Identity.Service\\Identity\\Identity.csproj": {
+    "E:\\Dotnet Projects\\Carsties-Project\\Carsties\\src\\Services\\Identity.Service\\Identity\\Identity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Identity.Service\\Identity\\Identity.csproj",
+        "projectUniqueName": "E:\\Dotnet Projects\\Carsties-Project\\Carsties\\src\\Services\\Identity.Service\\Identity\\Identity.csproj",
         "projectName": "Identity",
-        "projectPath": "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Identity.Service\\Identity\\Identity.csproj",
+        "projectPath": "E:\\Dotnet Projects\\Carsties-Project\\Carsties\\src\\Services\\Identity.Service\\Identity\\Identity.csproj",
         "packagesPath": "C:\\Users\\Notebook\\.nuget\\packages\\",
-        "outputPath": "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Identity.Service\\Identity\\obj\\",
+        "outputPath": "E:\\Dotnet Projects\\Carsties-Project\\Carsties\\src\\Services\\Identity.Service\\Identity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Notebook\\AppData\\Roaming\\NuGet\\NuGet.Config"

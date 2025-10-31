@@ -5469,11 +5469,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Auction.Service\\Auction.Api\\Auction.Api.csproj",
+      "projectUniqueName": "E:\\Dotnet Projects\\Carsties-Project\\Carsties\\src\\Services\\Auction.Service\\Auction.Api\\Auction.Api.csproj",
       "projectName": "Auction.Api",
-      "projectPath": "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Auction.Service\\Auction.Api\\Auction.Api.csproj",
+      "projectPath": "E:\\Dotnet Projects\\Carsties-Project\\Carsties\\src\\Services\\Auction.Service\\Auction.Api\\Auction.Api.csproj",
       "packagesPath": "C:\\Users\\Notebook\\.nuget\\packages\\",
-      "outputPath": "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Auction.Service\\Auction.Api\\obj\\",
+      "outputPath": "E:\\Dotnet Projects\\Carsties-Project\\Carsties\\src\\Services\\Auction.Service\\Auction.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Notebook\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -5488,14 +5488,14 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Auction.Service\\Auction.Application\\Auction.Application.csproj": {
-              "projectPath": "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Auction.Service\\Auction.Application\\Auction.Application.csproj"
+            "E:\\Dotnet Projects\\Carsties-Project\\Carsties\\src\\Services\\Auction.Service\\Auction.Application\\Auction.Application.csproj": {
+              "projectPath": "E:\\Dotnet Projects\\Carsties-Project\\Carsties\\src\\Services\\Auction.Service\\Auction.Application\\Auction.Application.csproj"
             },
-            "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Auction.Service\\Auction.infrastructure\\Auction.infrastructure.csproj": {
-              "projectPath": "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Auction.Service\\Auction.infrastructure\\Auction.infrastructure.csproj"
+            "E:\\Dotnet Projects\\Carsties-Project\\Carsties\\src\\Services\\Auction.Service\\Auction.infrastructure\\Auction.infrastructure.csproj": {
+              "projectPath": "E:\\Dotnet Projects\\Carsties-Project\\Carsties\\src\\Services\\Auction.Service\\Auction.infrastructure\\Auction.infrastructure.csproj"
             },
-            "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Shared\\Shared\\Shared.csproj": {
-              "projectPath": "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Shared\\Shared\\Shared.csproj"
+            "E:\\Dotnet Projects\\Carsties-Project\\Carsties\\src\\Shared\\Shared\\Shared.csproj": {
+              "projectPath": "E:\\Dotnet Projects\\Carsties-Project\\Carsties\\src\\Shared\\Shared\\Shared.csproj"
             }
           }
         }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Search.Service\\Search.Api\\Search.Api.csproj": {}
+    "E:\\Dotnet Projects\\Carsties-Project\\Carsties\\src\\Services\\Search.Service\\Search.Api\\Search.Api.csproj": {}
   },
   "projects": {
-    "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Search.Service\\Search.Api\\Search.Api.csproj": {
+    "E:\\Dotnet Projects\\Carsties-Project\\Carsties\\src\\Services\\Search.Service\\Search.Api\\Search.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Search.Service\\Search.Api\\Search.Api.csproj",
+        "projectUniqueName": "E:\\Dotnet Projects\\Carsties-Project\\Carsties\\src\\Services\\Search.Service\\Search.Api\\Search.Api.csproj",
         "projectName": "Search.Api",
-        "projectPath": "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Search.Service\\Search.Api\\Search.Api.csproj",
+        "projectPath": "E:\\Dotnet Projects\\Carsties-Project\\Carsties\\src\\Services\\Search.Service\\Search.Api\\Search.Api.csproj",
         "packagesPath": "C:\\Users\\Notebook\\.nuget\\packages\\",
-        "outputPath": "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Search.Service\\Search.Api\\obj\\",
+        "outputPath": "E:\\Dotnet Projects\\Carsties-Project\\Carsties\\src\\Services\\Search.Service\\Search.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Notebook\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,8 +26,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Shared\\Shared\\Shared.csproj": {
-                "projectPath": "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Shared\\Shared\\Shared.csproj"
+              "E:\\Dotnet Projects\\Carsties-Project\\Carsties\\src\\Shared\\Shared\\Shared.csproj": {
+                "projectPath": "E:\\Dotnet Projects\\Carsties-Project\\Carsties\\src\\Shared\\Shared\\Shared.csproj"
               }
             }
           }
@@ -96,14 +96,14 @@
         }
       }
     },
-    "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Shared\\Shared\\Shared.csproj": {
+    "E:\\Dotnet Projects\\Carsties-Project\\Carsties\\src\\Shared\\Shared\\Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Shared\\Shared\\Shared.csproj",
+        "projectUniqueName": "E:\\Dotnet Projects\\Carsties-Project\\Carsties\\src\\Shared\\Shared\\Shared.csproj",
         "projectName": "Shared",
-        "projectPath": "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Shared\\Shared\\Shared.csproj",
+        "projectPath": "E:\\Dotnet Projects\\Carsties-Project\\Carsties\\src\\Shared\\Shared\\Shared.csproj",
         "packagesPath": "C:\\Users\\Notebook\\.nuget\\packages\\",
-        "outputPath": "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Shared\\Shared\\obj\\",
+        "outputPath": "E:\\Dotnet Projects\\Carsties-Project\\Carsties\\src\\Shared\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Notebook\\AppData\\Roaming\\NuGet\\NuGet.Config"

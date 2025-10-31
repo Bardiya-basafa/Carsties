@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Auction.Service\\Auction.Domain\\Auction.Domain.csproj": {}
+    "E:\\Dotnet Projects\\Carsties-Project\\Carsties\\src\\Services\\Auction.Service\\Auction.Domain\\Auction.Domain.csproj": {}
   },
   "projects": {
-    "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Auction.Service\\Auction.Domain\\Auction.Domain.csproj": {
+    "E:\\Dotnet Projects\\Carsties-Project\\Carsties\\src\\Services\\Auction.Service\\Auction.Domain\\Auction.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Auction.Service\\Auction.Domain\\Auction.Domain.csproj",
+        "projectUniqueName": "E:\\Dotnet Projects\\Carsties-Project\\Carsties\\src\\Services\\Auction.Service\\Auction.Domain\\Auction.Domain.csproj",
         "projectName": "Auction.Domain",
-        "projectPath": "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Auction.Service\\Auction.Domain\\Auction.Domain.csproj",
+        "projectPath": "E:\\Dotnet Projects\\Carsties-Project\\Carsties\\src\\Services\\Auction.Service\\Auction.Domain\\Auction.Domain.csproj",
         "packagesPath": "C:\\Users\\Notebook\\.nuget\\packages\\",
-        "outputPath": "E:\\Dotnet Projects\\Carsties\\Carsties\\src\\Services\\Auction.Service\\Auction.Domain\\obj\\",
+        "outputPath": "E:\\Dotnet Projects\\Carsties-Project\\Carsties\\src\\Services\\Auction.Service\\Auction.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Notebook\\AppData\\Roaming\\NuGet\\NuGet.Config"
