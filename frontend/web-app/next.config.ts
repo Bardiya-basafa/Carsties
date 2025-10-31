@@ -4,6 +4,7 @@ const nextConfig = {
     },
    
     images: {
+        unoptimized: true,
         remotePatterns: [
             {
                 protocol: 'https',
@@ -25,9 +26,6 @@ const nextConfig = {
                 pathname: '/**',
             },
         ],
-    },
-    images: {
-        unoptimized: true, // Important for Docker deployments
     },
     output: 'standalone'
 }

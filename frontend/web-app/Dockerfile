@@ -1,37 +1,30 @@
-﻿# Use Node 23 Alpine as the builder
-FROM node:23-alpine AS builder
+﻿# === Build Stage ===
+FROM node:20-alpine AS builder
 
 WORKDIR /app
 
-# Install dependencies separately for efficient Docker caching
+# Install dependencies (with build tools for native packages)
+
 COPY frontend/web-app/package*.json ./
-RUN npm install --production=false
+RUN npm ci
 
-# Copy the rest of the application
-COPY frontend/web-app/ .
-
-# Build the Next.js application
+COPY frontend/web-app/. .
 RUN npm run build
 
-# Production image
-FROM node:23-alpine AS runner
+# === Run Stage ===
+FROM node:20-alpine AS runner
+
 WORKDIR /app
+ENV NEXT_TELEMETRY_DISABLED=1
 
 ENV NODE_ENV=production
-ENV PORT=3000
 
-# Install only production dependencies
-COPY frontend/web-app/package*.json ./
-RUN npm install --omit=dev
-
-# Copy built assets from builder stage
-COPY --from=builder /app/.next ./.next
+# Copy only the standalone output and static assets
+COPY --from=builder /app/.next/standalone ./
+COPY --from=builder /app/.next/static ./.next/static
 COPY --from=builder /app/public ./public
-COPY --from=builder /app/node_modules ./node_modules
-COPY --from=builder /app/package.json ./package.json
 
-# Expose the port Next.js runs on
 EXPOSE 3000
 
-# Start Next.js in standalone mode
-CMD ["npm", "start"]
+# Start the server (Next provides server.js in standalone mode)
+CMD ["node", "server.js"]
