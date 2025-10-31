@@ -6,9 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "postinstall": ""
-  },
+    "lint": "next lint"
+    },
   "dependencies": {
     "@microsoft/signalr": "^8.0.17",
     "@tailwindcss/typography": "^0.5.19",

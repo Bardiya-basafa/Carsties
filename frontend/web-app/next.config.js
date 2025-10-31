@@ -2,17 +2,7 @@ const nextConfig = {
     experimental: {
         serverActions: true
     },
-    experimental: {
-        useLightningcss: false,
-    },
-    async rewrites() {
-        return [
-            {
-                source: '/uploads/:path*',
-                destination: '/public/uploads/:path*',
-            },
-        ];
-    },
+   
     images: {
         remotePatterns: [
             {
@@ -35,6 +25,9 @@ const nextConfig = {
                 pathname: '/**',
             },
         ],
+    },
+    images: {
+        unoptimized: true, // Important for Docker deployments
     },
     output: 'standalone'
 }
