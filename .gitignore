@@ -1,0 +1,15 @@
+# .NET build outputs
+**/bin/
+**/obj/
+
+# Optional: Additional .NET ignores
+**/*.csproj.user
+**/packages/
+*.pubxml
+*.publishproj
+
+# Optional: IDE files
+**/.vs/
+**/.vscode/
+*.swp
+*.swo
