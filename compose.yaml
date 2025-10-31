@@ -195,26 +195,26 @@
       timeout: 3s
       retries: 5
   
-  # webapp:
-  #   container_name: webapp
-  #   image: bardiyabasafa/carsties-webapp
-  #   build:
-  #     context: .
-  #     dockerfile: frontend/web-app/Dockerfile
-  #   env_file:
-  #     - frontend/web-app/.env
-  #   ports:
-  #     - "3000:3000"
-  #   environment:
-  #     - VIRTUAL_HOST=app.carsties.local
-  #     - VIRTUAL_PORT=3000
-  #     # - NEXT_PUBLIC_API_BASE_URL=https://api.carsties.local
-  #     # - NEXT_PUBLIC_GATEWAY_BASE_URL=http://gateway:8080
-  #   volumes:
-  #     - ./frontend/web-app/public/uploads:/app/public/uploads:rw
-  #   depends_on:
-  #     notification.hub:
-  #       condition: service_started
+  webapp:
+    container_name: webapp
+    image: bardiyabasafa/carsties-webapp
+    build:
+      context: .
+      dockerfile: frontend/web-app/Dockerfile
+    env_file:
+      - frontend/web-app/.env
+    ports:
+      - "3000:3000"
+    environment:
+      - VIRTUAL_HOST=app.carsties.local
+      - VIRTUAL_PORT=3000
+      # - NEXT_PUBLIC_API_BASE_URL=https://api.carsties.local
+      # - NEXT_PUBLIC_GATEWAY_BASE_URL=http://gateway:8080
+    volumes:
+      - ./frontend/web-app/public/uploads:/app/public/uploads:rw
+    depends_on:
+      notification.hub:
+        condition: service_started
   
   nginx-proxy:
     image: nginxproxy/nginx-proxy
