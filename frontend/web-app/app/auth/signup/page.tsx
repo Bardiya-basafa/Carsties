@@ -36,7 +36,7 @@ export default function SignUp() {
         }
 
         try {
-            const response = await fetch("https://api.carsties.local/auth/register", {
+            const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/auth/register`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

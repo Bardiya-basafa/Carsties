@@ -1,5 +1,5 @@
 ﻿# Use a specific Node.js version
-FROM node AS builder
+FROM node:23-alpine AS builder
 WORKDIR /app
 COPY frontend/web-app/. .
 RUN npm install
