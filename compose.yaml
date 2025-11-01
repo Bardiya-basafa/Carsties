@@ -41,7 +41,7 @@
       - POSTGRES_PASSWORD=postgres
       - POSTGRES_DB=auctions
     volumes:
-      - postgres_auction_db:/var/lib/postgresql/data
+      - postgres_auction_db:/var/lib/postgresql
     healthcheck:
       test: [ "CMD-SHELL", "pg_isready -U postgres" ]
       interval: 3s
