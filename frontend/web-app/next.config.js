@@ -2,9 +2,7 @@ const nextConfig = {
     experimental: {
         serverActions: true
     },
-    experimental: {
-        useLightningcss: false,
-    },
+   
     async rewrites() {
         return [
             {
