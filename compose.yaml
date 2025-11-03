@@ -211,7 +211,9 @@
       # - NEXT_PUBLIC_API_BASE_URL=https://api.carsties.local
       # - NEXT_PUBLIC_GATEWAY_BASE_URL=http://gateway:8080
     volumes:
-      - ./frontend/web-app/public/uploads:/app/public/uploads:rw
+      - ./frontend/web-app:/app
+      - node_modules_volume:/app/node_modules
+      - /app/.next                # Isolate build cache
     depends_on:
       notification.hub:
         condition: service_started
@@ -231,3 +233,4 @@ volumes:
   postgres_identity_db:
   mongo_search_db:
   upload_images:
+  node_modules_volume:
