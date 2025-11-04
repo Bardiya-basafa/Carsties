@@ -29,8 +29,7 @@
         condition: service_healthy
       auction.cache:
         condition: service_healthy
-    
-  
+
   auction.db:
     image: postgres
     container_name: auction.db
@@ -47,7 +46,7 @@
       interval: 3s
       timeout: 3s
       retries: 5
-  
+
   auction.cache:
     image: redis
     container_name: auction.cache
@@ -58,7 +57,7 @@
       interval: 3s
       timeout: 3s
       retries: 5
-  
+
   identity.server:
     container_name: identity.server
     image: bardiyabasafa/carsties-identity-server
@@ -76,7 +75,6 @@
     depends_on:
       auction.db:
         condition: service_healthy
-  
 
   search.api:
     container_name: search.api
@@ -102,8 +100,7 @@
         condition: service_healthy
       auction.api:
         condition: service_started
-  
-  
+
   search.db:
     image: mongo
     container_name: search.db
@@ -116,19 +113,11 @@
     volumes:
       - mongo_search_db:/data/db
     healthcheck:
-      test:
-        [
-          "CMD",
-          "mongosh",
-          "--quiet",
-          "127.0.0.1/test",
-          "--eval",
-          "'quit(db.runCommand({ ping: 1 }).ok ? 0 : 2)'",
-        ]
+      test: [ "CMD", "mongosh", "--quiet", "127.0.0.1/test", "--eval", "'quit(db.runCommand({ ping: 1 }).ok ? 0 : 2)'" ]
       interval: 3s
       timeout: 3s
       retries: 5
-  
+
   bids.api:
     container_name: bids.api
     image: bardiyabasafa/carsties-bids-api
@@ -147,7 +136,7 @@
         condition: service_healthy
       search.db:
         condition: service_healthy
-        
+
   notification.hub:
     container_name: notification.hub
     image: bardiyabasafa/carsties-notification-hub
@@ -158,9 +147,8 @@
       - "7004:8080"
     depends_on:
       rabbitmq:
-        condition: service_healthy    
-        
-  
+        condition: service_healthy
+
   gateway:
     container_name: gateway
     image: bardiyabasafa/carsties-gateway
@@ -181,8 +169,8 @@
         condition: service_started
       # nginx-proxy:
       #   condition: service_started
-  
-  
+
+
   rabbitmq:
     image: rabbitmq:management
     container_name: rabbitmq
@@ -194,7 +182,7 @@
       interval: 3s
       timeout: 3s
       retries: 5
-  
+
   # webapp-dev:
   #   container_name: webapp.dev
   #   image: bardiyabasafa/carsties-webapp-dev
@@ -213,7 +201,7 @@
   #   volumes:
   #     - ./frontend/web-app:/app
   #     - node_modules_volume:/app/node_modules
-  #     - /app/.next                # Isolate build cache
+  #     - /app/.next
   #   depends_on:
   #     notification.hub:
   #       condition: service_started
@@ -233,13 +221,12 @@
       # - NEXT_PUBLIC_API_BASE_URL=https://api.carsties.local
       # - NEXT_PUBLIC_GATEWAY_BASE_URL=http://gateway:8080
     volumes:
-      # - ./frontend/web-app:/app
+      - ./frontend/web-app/public:/app/public
       - node_modules_volume:/app/node_modules
-      # - /app/.next                # Isolate build cache
+      - /app/.next
     depends_on:
       notification.hub:
         condition: service_started
-  
   # nginx-proxy:
   #   image: nginxproxy/nginx-proxy
   #   container_name: nginx-proxy
