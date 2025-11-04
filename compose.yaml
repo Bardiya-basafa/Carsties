@@ -179,8 +179,8 @@
     depends_on:
       identity.server:
         condition: service_started
-      nginx-proxy:
-        condition: service_started
+      # nginx-proxy:
+      #   condition: service_started
   
   
   rabbitmq:
@@ -240,15 +240,15 @@
   #     notification.hub:
   #       condition: service_started
   
-  nginx-proxy:
-    image: nginxproxy/nginx-proxy
-    container_name: nginx-proxy
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - /var/run/docker.sock:/tmp/docker.sock:ro
-      - ./devcerts:/etc/nginx/certs
+  # nginx-proxy:
+  #   image: nginxproxy/nginx-proxy
+  #   container_name: nginx-proxy
+  #   ports:
+  #     - "80:80"
+  #     - "443:443"
+  #   volumes:
+  #     - /var/run/docker.sock:/tmp/docker.sock:ro
+  #     - ./devcerts:/etc/nginx/certs
 
 volumes:
   postgres_auction_db:
