@@ -197,7 +197,7 @@
   
   webapp-dev:
     container_name: webapp.dev
-    image: bardiyabasafa/carsties-webapp
+    image: bardiyabasafa/carsties-webapp-dev
     build:
       context: .
       dockerfile: frontend/web-app/Dockerfile.dev
