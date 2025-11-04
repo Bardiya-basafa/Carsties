@@ -36,7 +36,7 @@ export default function SignUp() {
         }
 
         try {
-            const response = await fetch("https://api.carsties.local/auth/register", {
+            const response = await fetch(`http://localhost:6001/auth/register`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

@@ -32,6 +32,17 @@ export default function DeleteButton({auctionId, sellerEmail}: Props) {
     }
 
     return (
-        <Button onClick={handleClick}> Delete Auction </Button>
-    )
+<Button 
+  onClick={handleClick}
+  className="
+    border border-red-600 
+    text-red-600 
+    bg-transparent 
+    hover:bg-red-600 
+    hover:text-white 
+    focus:ring-red-500
+  "
+>
+  Delete Auction
+</Button>  )
 }

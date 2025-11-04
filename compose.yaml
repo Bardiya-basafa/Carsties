@@ -41,7 +41,7 @@
       - POSTGRES_PASSWORD=postgres
       - POSTGRES_DB=auctions
     volumes:
-      - postgres_auction_db:/var/lib/postgresql/data
+      - postgres_auction_db:/var/lib/postgresql
     healthcheck:
       test: [ "CMD-SHELL", "pg_isready -U postgres" ]
       interval: 3s
@@ -179,8 +179,8 @@
     depends_on:
       identity.server:
         condition: service_started
-      nginx-proxy:
-        condition: service_started
+      # nginx-proxy:
+      #   condition: service_started
   
   
   rabbitmq:
@@ -195,12 +195,12 @@
       timeout: 3s
       retries: 5
   
-  webapp:
-    container_name: webapp
-    image: bardiyabasafa/carsties-webapp
+  webapp-dev:
+    container_name: webapp.dev
+    image: bardiyabasafa/carsties-webapp-dev
     build:
       context: .
-      dockerfile: frontend/web-app/Dockerfile
+      dockerfile: frontend/web-app/Dockerfile.dev
     env_file:
       - frontend/web-app/.env
     ports:
@@ -211,23 +211,48 @@
       # - NEXT_PUBLIC_API_BASE_URL=https://api.carsties.local
       # - NEXT_PUBLIC_GATEWAY_BASE_URL=http://gateway:8080
     volumes:
-      - ./frontend/web-app/public/uploads:/app/public/uploads:rw
+      - ./frontend/web-app:/app
+      - node_modules_volume:/app/node_modules
+      - /app/.next                # Isolate build cache
     depends_on:
       notification.hub:
         condition: service_started
+  # webapp:
+  #   container_name: webapp
+  #   image: bardiyabasafa/carsties-webapp
+  #   build:
+  #     context: .
+  #     dockerfile: frontend/web-app/Dockerfile
+  #   env_file:
+  #     - frontend/web-app/.env
+  #   ports:
+  #     - "3000:3000"
+  #   environment:
+  #     - VIRTUAL_HOST=app.carsties.local
+  #     - VIRTUAL_PORT=3000
+  #     # - NEXT_PUBLIC_API_BASE_URL=https://api.carsties.local
+  #     # - NEXT_PUBLIC_GATEWAY_BASE_URL=http://gateway:8080
+  #   volumes:
+  #     - ./frontend/web-app:/app
+  #     - node_modules_volume:/app/node_modules
+  #     - /app/.next                # Isolate build cache
+  #   depends_on:
+  #     notification.hub:
+  #       condition: service_started
   
-  nginx-proxy:
-    image: nginxproxy/nginx-proxy
-    container_name: nginx-proxy
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - /var/run/docker.sock:/tmp/docker.sock:ro
-      - ./devcerts:/etc/nginx/certs
+  # nginx-proxy:
+  #   image: nginxproxy/nginx-proxy
+  #   container_name: nginx-proxy
+  #   ports:
+  #     - "80:80"
+  #     - "443:443"
+  #   volumes:
+  #     - /var/run/docker.sock:/tmp/docker.sock:ro
+  #     - ./devcerts:/etc/nginx/certs
 
 volumes:
   postgres_auction_db:
   postgres_identity_db:
   mongo_search_db:
   upload_images:
+  node_modules_volume:

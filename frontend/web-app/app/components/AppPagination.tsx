@@ -10,6 +10,12 @@ type Props = {
 
 export default function AppPagination({currentPage, pageCount, pageChanged}: Props) {
     return (
-        <Pagination currentPage={currentPage} onPageChange={e => pageChanged(e)} totalPages={pageCount} layout="pagination" showIcons={true} className="text-blue-500 mb-5"/>
-    )
+<Pagination 
+  currentPage={currentPage} 
+  onPageChange={e => pageChanged(e)} 
+  totalPages={pageCount} 
+  layout="pagination" 
+  showIcons={true} 
+  className="mb-5 text-blue-600 hover:text-blue-700"
+/>    )
 }

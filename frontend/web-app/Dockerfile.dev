@@ -1,0 +1,16 @@
+# Use official Node.js runtime as base image
+FROM node:latest AS base
+
+# Install dependencies only when needed
+WORKDIR /app
+
+# Copy package files
+COPY frontend/web-app/ ./
+
+
+EXPOSE 3000
+
+ENV PORT 3000
+ENV HOSTNAME "0.0.0.0"
+
+CMD ["npm", "run", "dev"]
