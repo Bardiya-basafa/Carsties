@@ -29,7 +29,7 @@ export async function saveFile(imageFile: any) {
             await writeFile(filePath, buffer)
 
             // Update imageUrl with the actual stored file path
-            const imageUrl = `/uploads/${uniqueFileName}`
+            const imageUrl = `/api/images/${uniqueFileName}`
             return imageUrl;
         }
 
