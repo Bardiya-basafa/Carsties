@@ -195,34 +195,12 @@
       timeout: 3s
       retries: 5
   
-  webapp-dev:
-    container_name: webapp.dev
-    image: bardiyabasafa/carsties-webapp-dev
-    build:
-      context: .
-      dockerfile: frontend/web-app/Dockerfile.dev
-    env_file:
-      - frontend/web-app/.env
-    ports:
-      - "3000:3000"
-    environment:
-      - VIRTUAL_HOST=app.carsties.local
-      - VIRTUAL_PORT=3000
-      # - NEXT_PUBLIC_API_BASE_URL=https://api.carsties.local
-      # - NEXT_PUBLIC_GATEWAY_BASE_URL=http://gateway:8080
-    volumes:
-      - ./frontend/web-app:/app
-      - node_modules_volume:/app/node_modules
-      - /app/.next                # Isolate build cache
-    depends_on:
-      notification.hub:
-        condition: service_started
-  # webapp:
-  #   container_name: webapp
-  #   image: bardiyabasafa/carsties-webapp
+  # webapp-dev:
+  #   container_name: webapp.dev
+  #   image: bardiyabasafa/carsties-webapp-dev
   #   build:
   #     context: .
-  #     dockerfile: frontend/web-app/Dockerfile
+  #     dockerfile: frontend/web-app/Dockerfile.dev
   #   env_file:
   #     - frontend/web-app/.env
   #   ports:
@@ -239,6 +217,28 @@
   #   depends_on:
   #     notification.hub:
   #       condition: service_started
+  webapp:
+    container_name: webapp
+    image: bardiyabasafa/carsties-webapp
+    build:
+      context: .
+      dockerfile: frontend/web-app/Dockerfile
+    env_file:
+      - frontend/web-app/.env
+    ports:
+      - "3000:3000"
+    environment:
+      - VIRTUAL_HOST=app.carsties.local
+      - VIRTUAL_PORT=3000
+      # - NEXT_PUBLIC_API_BASE_URL=https://api.carsties.local
+      # - NEXT_PUBLIC_GATEWAY_BASE_URL=http://gateway:8080
+    volumes:
+      # - ./frontend/web-app:/app
+      - node_modules_volume:/app/node_modules
+      # - /app/.next                # Isolate build cache
+    depends_on:
+      notification.hub:
+        condition: service_started
   
   # nginx-proxy:
   #   image: nginxproxy/nginx-proxy

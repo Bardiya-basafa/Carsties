@@ -1,8 +1,8 @@
 'use server';
 
-import {PagedResult, Auction, Bid} from "@/types";
-import {FieldValues} from "react-hook-form";
-import {fetchWrapper} from "@/app/lib/fetchWrapper";
+import { PagedResult, Auction, Bid } from "@/types";
+import { FieldValues } from "react-hook-form";
+import { fetchWrapper } from "@/app/lib/fetchWrapper";
 
 export async function getData(query: string): Promise<PagedResult<Auction>> {
     return fetchWrapper.get(`search${query}`);
@@ -17,6 +17,7 @@ export async function updateAuctionTest(): Promise<{ status: number, message: st
 }
 
 export async function createAuction(data: FieldValues) {
+    console.log("this is the data for creating auction " + JSON.stringify(data))
     return fetchWrapper.post('auctions', data);
 }
 

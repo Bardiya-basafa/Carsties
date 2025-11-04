@@ -30,7 +30,7 @@ const SignalRProvider = ({children}: Props) => {
     }, [session]);
     useEffect(() => {
         const newConnection = new HubConnectionBuilder()
-            .withUrl(`${process.env.NEXT_PUBLIC_SIGNALR_URL}`)
+            .withUrl(`http://localhost:6001/notification`)
             .withAutomaticReconnect()
             .build()
         setConnection(newConnection);
