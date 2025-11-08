@@ -1,5 +1,5 @@
 const nextConfig = {
- 
+
 
     async rewrites() {
         return [
@@ -10,6 +10,7 @@ const nextConfig = {
         ];
     },
     images: {
+
         remotePatterns: [
             {
                 protocol: 'https',
