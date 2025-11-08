@@ -17,7 +17,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
                         throw new Error("Email and password are required");
                     }
 
-                    const response = await fetch(`http://gateway:8080/auth/login`, {
+                    const response = await fetch(`${process.env.NEXT_PUBLIC_GATEWAY_BASE_URL}/auth/login`, {
                         method: "POST",
                         headers: {
                             "Content-Type": "application/json",

@@ -217,8 +217,9 @@
     environment:
       - VIRTUAL_HOST=app.carsties.local
       - VIRTUAL_PORT=3000
-      # - NEXT_PUBLIC_API_BASE_URL=https://api.carsties.local
-      # - NEXT_PUBLIC_GATEWAY_BASE_URL=http://gateway:8080
+      - NEXT_PUBLIC_API_BASE_URL=https://api.carsties.local
+      - NEXT_PUBLIC_NOTIFICATION_BASE_URL=https://api.carsties.local/notification
+      - NEXT_PUBLIC_GATEWAY_BASE_URL=http://gateway:8080
     volumes:
       - ./frontend/web-app/public:/app/public
       - node_modules_volume:/app/node_modules
