@@ -1,7 +1,7 @@
 import {auth} from "@/auth"
 
-// const baseUrl = `${process.env.NEXT_PUBLIC_GATEWAY_BASE_URL}/`;
-const baseUrl = `http://gateway:8080/`;
+const baseUrl = `${process.env.NEXT_PUBLIC_GATEWAY_BASE_URL}/`;
+// const baseUrl = `http://gateway:8080/`;
 
 
 async function get(url: string) {

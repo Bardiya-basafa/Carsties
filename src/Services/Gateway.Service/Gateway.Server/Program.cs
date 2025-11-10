@@ -38,7 +38,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 builder.Services.AddCors(options => {
     options.AddPolicy("AllowNextJS",
     policy => {
-        policy.WithOrigins("http://localhost:3000")
+        policy.WithOrigins("https://app.carsties.local")
             .AllowAnyHeader()
             .AllowAnyMethod()
             .AllowCredentials();
