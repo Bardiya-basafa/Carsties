@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: auction-svc-config
+data:
+  POSTGRES_USER: postgres
+  POSTGRES_PASSWORD: postgres
+  ASPNETCORE_HTTP_PORTS: 8080F
+  REDIS_HOST: auction.cache
+  REDIS_PORT: "6379"
+  ASPNETCORE_URLS: http://+:8080
+  RabbitMq__Host: rabbitmq
+  RabbitMq__Port: "5672"
+  RabbitMq__Username: guest
+  RabbitMq__Password: guest
+  Jwt__Key: your-super-secret-key-at-least-32-characters-long
+  Jwt__Issuer: https://app.carsties.local
+  Jwt__Audience: https://app.carsties.local
+  Jwt__ExpireHours: "350"
