@@ -13,17 +13,17 @@ spec:
     spec:
       containers:
       - name: postgres
-        image: postgres
-        imagePullPolicy: IfNotPresent
+        image: postgres:latest
+        imagePullPolicy: Never
         env:
         - name: POSTGRES_PASSWORD
           value: postgres
         ports:
         - containerPort: 5432
-        volumeMounts:
-          - mountPath: /var/lib/postgresql
-            name: postgres-data
-      volumes:
-        - name: postgres-data
-          persistentVolumeClaim: 
-            claimName: postgres-claim
+      #   volumeMounts:
+      #     - mountPath: /var/lib/postgresql
+      #       name: postgres-data
+      # volumes:
+      #   - name: postgres-data
+      #     persistentVolumeClaim: 
+      #       claimName: postgres-claim
