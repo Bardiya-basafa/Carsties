@@ -15,9 +15,9 @@ spec:
       - name: auction-svc
         image: bardiyabasafa/carsties-auction-api
         imagePullPolicy: Never
-        # envFrom:
-        #   - configMapRef:
-        #       name: auction-svc-config
+        envFrom:
+          - configMapRef:
+              name: auction-svc-config
         ports:
         - containerPort: 8080
           name: web
@@ -38,6 +38,20 @@ spec:
   - port: 8080
     targetPort: 8080
     name: web
+  
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: auction-clusterip-grpc
+spec:
+  type: ClusterIP
+  selector:
+    app: auction-svc
+  ports:
   - port: 8001
     targetPort: 8001
     name: grpc
+

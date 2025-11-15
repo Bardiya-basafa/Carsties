@@ -17,3 +17,39 @@ data:
   Jwt__Issuer: https://app.carsties.local
   Jwt__Audience: https://app.carsties.local
   Jwt__ExpireHours: "350"
+
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mongo-config
+data:
+  MONGO_INITDB_ROOT_USERNAME: root
+  MONGO_INITDB_ROOT_PASSWORD: mongo
+  MONGO_INITDB_DATABASE: searchdb
+
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: search-svc-config
+data:
+  ASPNETCORE_ENVIRONMENT: Development
+  ASPNETCORE_HTTP_PORTS: "8080"
+  RabbitMq__Host: rabbitmq
+  RabbitMq__Port: "5672"
+  RabbitMq__Username: guest
+  RabbitMq__Password: guest
+  Jwt__Issuer: https://app.carsties.local
+  Jwt__Audience: https://app.carsties.local
+
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: bids-svc-config
+data:
+  ASPNETCORE_ENVIRONMENT: Development
+  ASPNETCORE_HTTP_PORTS: "8080"
+  Jwt__Issuer: https://app.carsties.local
+  Jwt__Audience: https://app.carsties.local

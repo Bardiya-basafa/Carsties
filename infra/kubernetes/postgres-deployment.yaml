@@ -20,10 +20,24 @@ spec:
           value: postgres
         ports:
         - containerPort: 5432
-      #   volumeMounts:
-      #     - mountPath: /var/lib/postgresql
-      #       name: postgres-data
-      # volumes:
-      #   - name: postgres-data
-      #     persistentVolumeClaim: 
-      #       claimName: postgres-claim
+        volumeMounts:
+          - mountPath: /var/lib/postgresql
+            name: postgres-data
+      volumes:
+        - name: postgres-data
+          persistentVolumeClaim: 
+            claimName: postgres-claim
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: postgres-clusterip
+spec:
+  type: ClusterIP
+  selector:
+    app: postgres
+  ports:
+  - port: 5432
+    targetPort: 5432
+    name: postgres-port

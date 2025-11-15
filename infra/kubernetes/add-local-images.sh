@@ -7,7 +7,7 @@ docker save bardiyabasafa/carsties-bids-api -o ~/k8s/carsties-bids-api.tar && \
 docker save bardiyabasafa/carsties-notification-hub -o ~/k8s/carsties-notification-hub.tar && \ 
 docker save bardiyabasafa/carsties-gateway -o ~/k8s/carsties-gateway.tar && \ 
 docker save bardiyabasafa/carsties-webapp -o ~/k8s/carsties-webapp.tar && \ 
-docker save postgres -o ~/k8s/postgres.tar && \ 
+docker save postgres:16.11-alpine3.22 -o ~/k8s/postgres.tar && \ 
 docker save redis -o ~/k8s/redis.tar && \ 
 docker save mongo -o ~/k8s/mongo.tar && \ 
 docker save rabbitmq -o ~/k8s/rabbitmq.tar && \ 
