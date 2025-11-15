@@ -9,7 +9,9 @@ data:
   REDIS_HOST: auction.cache
   REDIS_PORT: "6379"
   ASPNETCORE_URLS: http://+:8080
-  RabbitMq__Host: rabbitmq
+  ConnectionStrings__DefaultConnection: "Host=postgres-clusterip;Database=auctions;Port=5432;Username=postgres;Password=postgres;Include Error Detail=true"
+  ConnectionStrings__Redis: "redis-clusterip:6379"
+  RabbitMq__Host: rabbitmq-clusterip
   RabbitMq__Port: "5672"
   RabbitMq__Username: guest
   RabbitMq__Password: guest
@@ -36,7 +38,8 @@ metadata:
 data:
   ASPNETCORE_ENVIRONMENT: Development
   ASPNETCORE_HTTP_PORTS: "8080"
-  RabbitMq__Host: rabbitmq
+  ConnectionStrings__MongoDb: "mongodb://root:mongo@mongo-clusterip:27017/searchdb?authSource=admin"
+  RabbitMq__Host: rabbitmq-clusterip
   RabbitMq__Port: "5672"
   RabbitMq__Username: guest
   RabbitMq__Password: guest
@@ -51,5 +54,27 @@ metadata:
 data:
   ASPNETCORE_ENVIRONMENT: Development
   ASPNETCORE_HTTP_PORTS: "8080"
+  ConnectionStrings__BidDb: "mongodb://root:mongo@mongo-clusterip:27017/biddb?authSource=admin"
   Jwt__Issuer: https://app.carsties.local
   Jwt__Audience: https://app.carsties.local
+
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: identity-config
+data:
+  ASPNETCORE_ENVIRONMENT: Development
+  ConnectionStrings__DefaultConnection: "Host=postgres-clusterip;Database=identity;Port=5432;Username=postgres;Password=postgres;Include Error Detail=true"
+  POSTGRES_USER: postgres
+  POSTGRES_PASSWORD: postgres
+  Jwt__Issuer: https://app.carsties.local
+  Jwt__Audience: https://app.carsties.local
+
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: notification-config
+data:
+  RabbitMQ__Host: rabbitmq-clusterip
