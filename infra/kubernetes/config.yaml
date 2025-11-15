@@ -78,3 +78,27 @@ metadata:
   name: notification-config
 data:
   RabbitMQ__Host: rabbitmq-clusterip
+
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: gateway-config
+data:
+  ASPNETCORE_ENVIRONMENT: Kubernetes
+
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: webapp-config
+data:
+  VIRTUAL_HOST: app.carsties.local
+  VIRTUAL_PORT: "3000"
+  NEXT_PUBLIC_API_BASE_URL: https://api.carsties.local
+  NEXT_PUBLIC_NOTIFICATION_BASE_URL: https://api.carsties.local/notification
+  NEXT_PUBLIC_GATEWAY_BASE_URL: http://gateway-clusterip:8080
+  AUTH_SECRET: eFk8fwusIpFosuewR9+OQBHhzzhZTQKpPHiv5C07UjA
+  NEXT_PUBLIC_SIGNALR_URL: http://localhost:6001/notification
+  NEXTAUTH_URL: https://app.carsties.local
+  AUTH_TRUST_HOST: "true"
