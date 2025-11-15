@@ -13,8 +13,8 @@ spec:
     spec:
       containers:
       - name: postgres
-        image: postgres:latest
-        imagePullPolicy: Never
+        image: postgres
+        # imagePullPolicy: Never
         env:
         - name: POSTGRES_PASSWORD
           value: postgres
